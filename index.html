@@ -104,18 +104,28 @@
   </footer>
 
   <script>
-    // only register SW when not on localhost (or your dev domain)
+    // Only register SW in production
     if ('serviceWorker' in navigator && window.location.hostname !== 'localhost') {
       navigator.serviceWorker.register('sw.js')
         .then(() => console.log('SW registered'))
         .catch(err => console.error('SW failed:', err));
-    } else {
-      console.log('Skipping Service Worker registration in development');
     }
 
-    // Force-reload handler stays the same
-    document.getElementById('reloadBtn').addEventListener('click', () => {
-      window.location.reload();
+    // Force-reload handler: clear caches then reload
+    document.getElementById('reloadBtn').addEventListener('click', async () => {
+      if ('caches' in window) {
+        const keys = await caches.keys();
+        await Promise.all(keys.map(key => caches.delete(key)));
+        console.log('All caches cleared:', keys);
+      }
+      // Optionally also unregister SW to force a fresh install next load
+      if (navigator.serviceWorker) {
+        const regs = await navigator.serviceWorker.getRegistrations();
+        await Promise.all(regs.map(reg => reg.unregister()));
+        console.log('Service worker unregistered');
+      }
+      // Finally, reload the page from network
+      window.location.reload(true);
     });
   </script>
 
