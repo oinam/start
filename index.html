@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Oinam’s START</title>
+  <style>
+    :root {
+      --bg: #f9f9f9;
+      --fg: #333;
+      --accent: #0a84ff;
+      --padding: 1rem;
+      --max-width: 640px;
+      --btn-bg: #0a84ff;
+      --btn-fg: #fff;
+    }
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+    body {
+      background: var(--bg);
+      color: var(--fg);
+      font-family: system-ui, sans-serif;
+      line-height: 1.5;
+      padding: var(--padding);
+      max-width: var(--max-width);
+      margin: auto;
+    }
+    header, main, footer {
+      margin-bottom: var(--padding);
+    }
+    h1 { font-size: 2rem; color: var(--accent); }
+    h2 { font-size: 1.5rem; margin-top: var(--padding); }
+    p { margin-top: 0.5rem; }
+    button {
+      display: inline-block;
+      margin-top: var(--padding);
+      padding: 0.5rem 1rem;
+      font-size: 1rem;
+      background: var(--btn-bg);
+      color: var(--btn-fg);
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+    }
+    button:hover {
+      opacity: 0.9;
+    }
+    footer { text-align: center; font-size: 0.875rem; }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Oinam’s Start</h1>
+    <p>
+      A Bookmark of tools, currently used regularly, and the ones experimenting to see if they fits in.
+    </p>
+    <p>
+      <button id="reloadBtn">Reload</button>
+    </p>
+  </header>
+  
+  <main>
+    <section>
+      <h2>Primary</h2>
+      <p>
+        <ul>
+          <li><a href="https://chatgpt.com">ChatGPT</a></li>
+        </ul>
+      </p>
+    </section>
+  </main>
+  
+  <footer>
+    <small>By <a href="https://brajeshwar.com">Brajeshwar</a> <a href="https://oinam.com">Oinam</a></small>
+  </footer>
+
+  <script>
+    // Register Service Worker
+    if ('serviceWorker' in navigator) {
+      navigator.serviceWorker.register('sw.js')
+        .then(() => console.log('SW registered'))
+        .catch(err => console.error('SW failed:', err));
+    }
+
+    // Force-reload handler
+    document.getElementById('reloadBtn').addEventListener('click', () => {
+      // This reload will revalidate and update the page (and SW) if online
+      window.location.reload();
+    });
+  </script>
+</body>
+</html>
