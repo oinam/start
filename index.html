@@ -10,7 +10,7 @@
       --fg: #333;
       --accent: #0a84ff;
       --padding: 1rem;
-      --max-width: 640px;
+      --max-width: 96%;
       --btn-bg: #0a84ff;
       --btn-fg: #fff;
     }
@@ -58,11 +58,23 @@
       A Bookmark of tools, currently used regularly, and the ones experimenting to see if they fits in.
     </p>
     <p>
+      <input type="checkbox" id="newTabToggle">
+      <label for="newTabToggle">Open all links in new tab</label>
+    </p>
+    <p>
       <button id="reloadBtn">Reload</button>
     </p>
   </header>
   
   <main>
+    <section>
+      <h2>Regular</h2>
+      <p>
+        <ul>
+          <li><a href="https://news.ycombinator.com">Hacker News</a></li>
+        </ul>
+      </p>
+    </section>
     <section>
       <h2>Primary</h2>
       <p>
@@ -88,17 +100,46 @@
   </footer>
 
   <script>
-    // Register Service Worker
-    if ('serviceWorker' in navigator) {
+    // only register SW when not on localhost (or your dev domain)
+    if ('serviceWorker' in navigator && window.location.hostname !== 'localhost') {
       navigator.serviceWorker.register('sw.js')
         .then(() => console.log('SW registered'))
         .catch(err => console.error('SW failed:', err));
+    } else {
+      console.log('Skipping Service Worker registration in development');
     }
 
-    // Force-reload handler
+    // Force-reload handler stays the same
     document.getElementById('reloadBtn').addEventListener('click', () => {
-      // This reload will revalidate and update the page (and SW) if online
       window.location.reload();
+    });
+  </script>
+
+  <script>
+    // open links in new tab if the user selects the option
+    const chk = document.getElementById('newTabToggle');
+    const STORAGE_KEY = 'openInNewTab';
+
+    // Initialize checkbox from localStorage
+    const saved = localStorage.getItem(STORAGE_KEY);
+    if (saved !== null) {
+      chk.checked = saved === 'true';
+    }
+
+    // Save whenever user toggles
+    chk.addEventListener('change', () => {
+      localStorage.setItem(STORAGE_KEY, chk.checked);
+    });
+
+    // Intercept link clicks
+    document.body.addEventListener('click', e => {
+      const link = e.target.closest('a');
+      if (!link || !link.href) return;
+
+      if (chk.checked) {
+        e.preventDefault();
+        window.open(link.href, '_blank', 'noopener');
+      }
     });
   </script>
 </body>
