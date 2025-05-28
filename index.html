@@ -105,10 +105,16 @@
 
   <script>
     // Only register SW in production
-    if ('serviceWorker' in navigator && window.location.hostname !== 'localhost') {
-      navigator.serviceWorker.register('sw.js')
-        .then(() => console.log('SW registered'))
-        .catch(err => console.error('SW failed:', err));
+    if ('serviceWorker' in navigator) {
+      const host = window.location.host; // "localhost:3000", "127.0.0.1:9000", etc.
+      const isLocal = host.includes('localhost') || host.startsWith('127.0.0.1');
+      if (!isLocal) {
+        navigator.serviceWorker.register('sw.js')
+          .then(() => console.log('SW registered'))
+          .catch(err => console.error('SW failed:', err));
+      } else {
+        console.log('Skipping Service Worker on local development host:', host);
+      }
     }
 
     // Force-reload handler: clear caches then reload
