@@ -1,52 +1,211 @@
+/* Theme Variables */
 :root {
-  --color-background: oklch(100% 0 0);
-  --color-foreground: oklch(15% 0.02 285);
-  --color-card: oklch(100% 0 0);
-  --color-card-foreground: oklch(15% 0.02 285);
-  --color-popover: oklch(100% 0 0);
-  --color-popover-foreground: oklch(15% 0.02 285);
-  --color-primary: oklch(25% 0.02 285);
-  --color-primary-foreground: oklch(98% 0.005 240);
-  --color-secondary: oklch(96% 0.005 240);
-  --color-secondary-foreground: oklch(15% 0.02 285);
-  --color-muted: oklch(96% 0.005 240);
-  --color-muted-foreground: oklch(55% 0.01 245);
-  --color-accent: oklch(96% 0.005 240);
-  --color-accent-foreground: oklch(15% 0.02 285);
-  --color-destructive: oklch(62% 0.2 25);
-  --color-destructive-foreground: oklch(98% 0.005 240);
-  --color-border: oklch(91% 0.01 245);
-  --color-input: oklch(91% 0.01 245);
-  --color-ring: oklch(15% 0.02 285);
-  --color-list-border: oklch(91% 0.01 245 / 0.5);
-  --color-list-alternate: oklch(95% 0 0);
+  /* Theme selector - change this to switch themes */
+  --theme: "nord"; /* "monochrome" or "nord" */
+}
+
+/* Monochrome Theme (Default) */
+:root {
+  /* Light Mode Colors */
+  --mono-background: oklch(100% 0 0);
+  --mono-foreground: oklch(15% 0.02 285);
+  --mono-card: oklch(100% 0 0);
+  --mono-card-foreground: oklch(15% 0.02 285);
+  --mono-popover: oklch(100% 0 0);
+  --mono-popover-foreground: oklch(15% 0.02 285);
+  --mono-primary: oklch(25% 0.02 285);
+  --mono-primary-foreground: oklch(98% 0.005 240);
+  --mono-secondary: oklch(96% 0.005 240);
+  --mono-secondary-foreground: oklch(15% 0.02 285);
+  --mono-muted: oklch(96% 0.005 240);
+  --mono-muted-foreground: oklch(55% 0.01 245);
+  --mono-accent: oklch(96% 0.005 240);
+  --mono-accent-foreground: oklch(15% 0.02 285);
+  --mono-destructive: oklch(62% 0.2 25);
+  --mono-destructive-foreground: oklch(98% 0.005 240);
+  --mono-border: oklch(91% 0.01 245);
+  --mono-input: oklch(91% 0.01 245);
+  --mono-ring: oklch(15% 0.02 285);
+  --mono-list-border: oklch(91% 0.01 245 / 0.5);
+  --mono-list-alternate: oklch(95% 0 0);
+
+  /* Dark Mode Colors */
+  --mono-dark-background: oklch(15% 0.02 285);
+  --mono-dark-foreground: oklch(98% 0.005 240);
+  --mono-dark-card: oklch(15% 0.02 285);
+  --mono-dark-card-foreground: oklch(98% 0.005 240);
+  --mono-dark-popover: oklch(15% 0.02 285);
+  --mono-dark-popover-foreground: oklch(98% 0.005 240);
+  --mono-dark-primary: oklch(98% 0.005 240);
+  --mono-dark-primary-foreground: oklch(25% 0.02 285);
+  --mono-dark-secondary: oklch(25% 0.02 270);
+  --mono-dark-secondary-foreground: oklch(98% 0.005 240);
+  --mono-dark-muted: oklch(25% 0.02 270);
+  --mono-dark-muted-foreground: oklch(65% 0.01 245);
+  --mono-dark-accent: oklch(25% 0.02 270);
+  --mono-dark-accent-foreground: oklch(98% 0.005 240);
+  --mono-dark-destructive: oklch(45% 0.15 25);
+  --mono-dark-destructive-foreground: oklch(98% 0.005 240);
+  --mono-dark-border: oklch(25% 0.02 270);
+  --mono-dark-input: oklch(25% 0.02 270);
+  --mono-dark-ring: oklch(84% 0.02 245);
+  --mono-dark-list-border: oklch(25% 0.02 270 / 0.3);
+  --mono-dark-list-alternate: oklch(20% 0.02 285);
+}
+
+/* Nord Theme Colors */
+:root {
+  /* Light Mode Colors - Snow Storm backgrounds, Polar Night text */
+  --nord-background: #eceff4; /* nord6 */
+  --nord-foreground: #2e3440; /* nord0 */
+  --nord-card: #e5e9f0; /* nord5 */
+  --nord-card-foreground: #2e3440; /* nord0 */
+  --nord-popover: #e5e9f0; /* nord5 */
+  --nord-popover-foreground: #2e3440; /* nord0 */
+  --nord-primary: #5e81ac; /* nord10 */
+  --nord-primary-foreground: #eceff4; /* nord6 */
+  --nord-secondary: #d8dee9; /* nord4 */
+  --nord-secondary-foreground: #3b4252; /* nord1 */
+  --nord-muted: #d8dee9; /* nord4 */
+  --nord-muted-foreground: #4c566a; /* nord3 */
+  --nord-accent: #d8dee9; /* nord4 */
+  --nord-accent-foreground: #2e3440; /* nord0 */
+  --nord-destructive: #bf616a; /* nord11 */
+  --nord-destructive-foreground: #eceff4; /* nord6 */
+  --nord-border: #434c5e; /* nord2 */
+  --nord-input: #d8dee9; /* nord4 */
+  --nord-ring: #81a1c1; /* nord9 */
+  --nord-list-border: #434c5e80; /* nord2 with transparency */
+  --nord-list-alternate: #e5e9f0; /* nord5 */
+
+  /* Dark Mode Colors - Polar Night backgrounds, Snow Storm text */
+  --nord-dark-background: #2e3440; /* nord0 */
+  --nord-dark-foreground: #eceff4; /* nord6 */
+  --nord-dark-card: #3b4252; /* nord1 */
+  --nord-dark-card-foreground: #eceff4; /* nord6 */
+  --nord-dark-popover: #3b4252; /* nord1 */
+  --nord-dark-popover-foreground: #eceff4; /* nord6 */
+  --nord-dark-primary: #88c0d0; /* nord8 */
+  --nord-dark-primary-foreground: #2e3440; /* nord0 */
+  --nord-dark-secondary: #434c5e; /* nord2 */
+  --nord-dark-secondary-foreground: #e5e9f0; /* nord5 */
+  --nord-dark-muted: #434c5e; /* nord2 */
+  --nord-dark-muted-foreground: #d8dee9; /* nord4 */
+  --nord-dark-accent: #434c5e; /* nord2 */
+  --nord-dark-accent-foreground: #eceff4; /* nord6 */
+  --nord-dark-destructive: #bf616a; /* nord11 */
+  --nord-dark-destructive-foreground: #eceff4; /* nord6 */
+  --nord-dark-border: #4c566a; /* nord3 */
+  --nord-dark-input: #434c5e; /* nord2 */
+  --nord-dark-ring: #8fbcbb; /* nord7 */
+  --nord-dark-list-border: #4c566a60; /* nord3 with transparency */
+  --nord-dark-list-alternate: #3b4252; /* nord1 */
+}
+
+/* Active Theme Color Assignment */
+:root {
+  /* Default to monochrome theme */
+  --color-background: var(--mono-background);
+  --color-foreground: var(--mono-foreground);
+  --color-card: var(--mono-card);
+  --color-card-foreground: var(--mono-card-foreground);
+  --color-popover: var(--mono-popover);
+  --color-popover-foreground: var(--mono-popover-foreground);
+  --color-primary: var(--mono-primary);
+  --color-primary-foreground: var(--mono-primary-foreground);
+  --color-secondary: var(--mono-secondary);
+  --color-secondary-foreground: var(--mono-secondary-foreground);
+  --color-muted: var(--mono-muted);
+  --color-muted-foreground: var(--mono-muted-foreground);
+  --color-accent: var(--mono-accent);
+  --color-accent-foreground: var(--mono-accent-foreground);
+  --color-destructive: var(--mono-destructive);
+  --color-destructive-foreground: var(--mono-destructive-foreground);
+  --color-border: var(--mono-border);
+  --color-input: var(--mono-input);
+  --color-ring: var(--mono-ring);
+  --color-list-border: var(--mono-list-border);
+  --color-list-alternate: var(--mono-list-alternate);
+
+  /* Typography and layout */
   --font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
   --font-family-mono: ui-monospace, SFMono-Regular, "SF Mono", Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
   --radius: 0.5rem;
 }
 
+/* Nord Theme Override */
+:root[data-color-theme="nord"] {
+  --color-background: var(--nord-background);
+  --color-foreground: var(--nord-foreground);
+  --color-card: var(--nord-card);
+  --color-card-foreground: var(--nord-card-foreground);
+  --color-popover: var(--nord-popover);
+  --color-popover-foreground: var(--nord-popover-foreground);
+  --color-primary: var(--nord-primary);
+  --color-primary-foreground: var(--nord-primary-foreground);
+  --color-secondary: var(--nord-secondary);
+  --color-secondary-foreground: var(--nord-secondary-foreground);
+  --color-muted: var(--nord-muted);
+  --color-muted-foreground: var(--nord-muted-foreground);
+  --color-accent: var(--nord-accent);
+  --color-accent-foreground: var(--nord-accent-foreground);
+  --color-destructive: var(--nord-destructive);
+  --color-destructive-foreground: var(--nord-destructive-foreground);
+  --color-border: var(--nord-border);
+  --color-input: var(--nord-input);
+  --color-ring: var(--nord-ring);
+  --color-list-border: var(--nord-list-border);
+  --color-list-alternate: var(--nord-list-alternate);
+}
+
+/* Dark Mode Overrides */
 [data-theme="dark"] {
-  --color-background: oklch(15% 0.02 285);
-  --color-foreground: oklch(98% 0.005 240);
-  --color-card: oklch(15% 0.02 285);
-  --color-card-foreground: oklch(98% 0.005 240);
-  --color-popover: oklch(15% 0.02 285);
-  --color-popover-foreground: oklch(98% 0.005 240);
-  --color-primary: oklch(98% 0.005 240);
-  --color-primary-foreground: oklch(25% 0.02 285);
-  --color-secondary: oklch(25% 0.02 270);
-  --color-secondary-foreground: oklch(98% 0.005 240);
-  --color-muted: oklch(25% 0.02 270);
-  --color-muted-foreground: oklch(65% 0.01 245);
-  --color-accent: oklch(25% 0.02 270);
-  --color-accent-foreground: oklch(98% 0.005 240);
-  --color-destructive: oklch(45% 0.15 25);
-  --color-destructive-foreground: oklch(98% 0.005 240);
-  --color-border: oklch(25% 0.02 270);
-  --color-input: oklch(25% 0.02 270);
-  --color-ring: oklch(84% 0.02 245);
-  --color-list-border: oklch(25% 0.02 270 / 0.3);
-  --color-list-alternate: oklch(20% 0.02 285);
+  --color-background: var(--mono-dark-background);
+  --color-foreground: var(--mono-dark-foreground);
+  --color-card: var(--mono-dark-card);
+  --color-card-foreground: var(--mono-dark-card-foreground);
+  --color-popover: var(--mono-dark-popover);
+  --color-popover-foreground: var(--mono-dark-popover-foreground);
+  --color-primary: var(--mono-dark-primary);
+  --color-primary-foreground: var(--mono-dark-primary-foreground);
+  --color-secondary: var(--mono-dark-secondary);
+  --color-secondary-foreground: var(--mono-dark-secondary-foreground);
+  --color-muted: var(--mono-dark-muted);
+  --color-muted-foreground: var(--mono-dark-muted-foreground);
+  --color-accent: var(--mono-dark-accent);
+  --color-accent-foreground: var(--mono-dark-accent-foreground);
+  --color-destructive: var(--mono-dark-destructive);
+  --color-destructive-foreground: var(--mono-dark-destructive-foreground);
+  --color-border: var(--mono-dark-border);
+  --color-input: var(--mono-dark-input);
+  --color-ring: var(--mono-dark-ring);
+  --color-list-border: var(--mono-dark-list-border);
+  --color-list-alternate: var(--mono-dark-list-alternate);
+}
+
+/* Nord Dark Mode Override */
+:root[data-color-theme="nord"][data-theme="dark"] {
+  --color-background: var(--nord-dark-background);
+  --color-foreground: var(--nord-dark-foreground);
+  --color-card: var(--nord-dark-card);
+  --color-card-foreground: var(--nord-dark-card-foreground);
+  --color-popover: var(--nord-dark-popover);
+  --color-popover-foreground: var(--nord-dark-popover-foreground);
+  --color-primary: var(--nord-dark-primary);
+  --color-primary-foreground: var(--nord-dark-primary-foreground);
+  --color-secondary: var(--nord-dark-secondary);
+  --color-secondary-foreground: var(--nord-dark-secondary-foreground);
+  --color-muted: var(--nord-dark-muted);
+  --color-muted-foreground: var(--nord-dark-muted-foreground);
+  --color-accent: var(--nord-dark-accent);
+  --color-accent-foreground: var(--nord-dark-accent-foreground);
+  --color-destructive: var(--nord-dark-destructive);
+  --color-destructive-foreground: var(--nord-dark-destructive-foreground);
+  --color-border: var(--nord-dark-border);
+  --color-input: var(--nord-dark-input);
+  --color-ring: var(--nord-dark-ring);
+  --color-list-border: var(--nord-dark-list-border);
+  --color-list-alternate: var(--nord-dark-list-alternate);
 }
 
 /* Base styles */
@@ -125,8 +284,6 @@ body {
   line-height: 1.2;
 }
 
-
-
 .header-actions {
   display: flex;
   align-items: center;
@@ -162,8 +319,6 @@ body {
 .search-input::placeholder {
   color: var(--color-muted-foreground);
 }
-
-
 
 .search-shortcut {
   position: absolute;
@@ -269,8 +424,6 @@ body {
   background-color: var(--color-primary);
   color: var(--color-primary-foreground);
 }
-
-
 
 /* Main wrapper with sidebar */
 .main-wrapper {
@@ -491,8 +644,6 @@ body {
   box-shadow: 0 4px 12px oklch(from var(--color-ring) l c h / 0.15);
 }
 
-
-
 .tag {
   padding: 0.25rem 0.5rem;
   background-color: var(--color-secondary);
@@ -542,8 +693,6 @@ body {
   text-transform: capitalize;
 }
 
-
-
 /* Empty state */
 .empty-state {
   display: flex;
@@ -553,8 +702,6 @@ body {
   padding: 3rem 1rem;
   text-align: center;
 }
-
-
 
 .empty-state h3 {
   font-size: 1.25rem;
@@ -585,8 +732,6 @@ body {
     border-top: 1px solid var(--color-border);
     padding-top: 2rem;
   }
-
-
 }
 
 @media (max-width: 768px) {
@@ -618,8 +763,6 @@ body {
     grid-template-columns: 1fr;
   }
 
-
-
   .title {
     font-size: 1.5rem;
   }
@@ -635,8 +778,6 @@ body {
     border-top: 1px solid var(--color-border);
     padding-top: 1.5rem;
   }
-
-
 }
 
 @media (max-width: 480px) {
@@ -680,9 +821,6 @@ body {
   .sidebar-section {
     padding: 0;
   }
-
-
-
 }
 
 /* Loading animation */
@@ -770,8 +908,6 @@ body {
   line-height: 1.5;
   margin-bottom: 0;
 }
-
-
 
 /* Smooth transitions */
 * {

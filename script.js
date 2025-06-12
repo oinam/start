@@ -164,7 +164,9 @@ class ViewManager {
 class ThemeManager {
   constructor() {
     this.themes = ['auto', 'light', 'dark'];
+    this.colorThemes = ['monochrome', 'nord'];
     this.currentThemeIndex = 0;
+    this.currentColorTheme = 'monochrome';
     this.init();
   }
 
@@ -174,6 +176,9 @@ class ThemeManager {
     this.currentThemeIndex = this.themes.indexOf(savedTheme);
     if (this.currentThemeIndex === -1) this.currentThemeIndex = 0;
     
+    // Load saved color theme or default to monochrome
+    this.currentColorTheme = localStorage.getItem('colorTheme') || 'monochrome';
+    
     this.applyTheme();
     this.updateThemeIcon();
   }
@@ -182,6 +187,10 @@ class ThemeManager {
     const theme = this.themes[this.currentThemeIndex];
     const root = document.documentElement;
     
+    // Set color theme attribute
+    root.setAttribute('data-color-theme', this.currentColorTheme);
+    
+    // Set light/dark mode
     if (theme === 'auto') {
       // Use system preference
       const prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
@@ -191,12 +200,20 @@ class ThemeManager {
     }
     
     localStorage.setItem('theme', theme);
+    localStorage.setItem('colorTheme', this.currentColorTheme);
   }
 
   toggle() {
     this.currentThemeIndex = (this.currentThemeIndex + 1) % this.themes.length;
     this.applyTheme();
     this.updateThemeIcon();
+  }
+
+  switchColorTheme() {
+    const currentIndex = this.colorThemes.indexOf(this.currentColorTheme);
+    const nextIndex = (currentIndex + 1) % this.colorThemes.length;
+    this.currentColorTheme = this.colorThemes[nextIndex];
+    this.applyTheme();
   }
 
   updateThemeIcon() {
@@ -564,8 +581,16 @@ document.addEventListener('DOMContentLoaded', () => {
   
   // Theme toggle button
   const themeToggle = document.getElementById('theme-toggle');
+  
+  // Left click: toggle light/dark/auto mode
   themeToggle.addEventListener('click', () => {
     themeManager.toggle();
+  });
+
+  // Right click: switch color theme
+  themeToggle.addEventListener('contextmenu', (e) => {
+    e.preventDefault();
+    themeManager.switchColorTheme();
   });
 
   // Listen for system theme changes
