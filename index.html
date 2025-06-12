@@ -1,166 +1,98 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width,initial-scale=1">
-  <title>oSTART</title>
-  <style>
-    :root {
-      --bg: #f9f9f9;
-      --fg: #333;
-      --accent: #0a84ff;
-      --padding: 1rem;
-      --max-width: 96%;
-      --btn-bg: #0a84ff;
-      --btn-fg: #fff;
-    }
-    * {
-      box-sizing: border-box;
-      margin: 0;
-      padding: 0;
-    }
-    body {
-      background: var(--bg);
-      color: var(--fg);
-      font-family: system-ui, sans-serif;
-      line-height: 1.5;
-      padding: var(--padding);
-      max-width: var(--max-width);
-      margin: auto;
-    }
-    header, main, footer {
-      margin-bottom: var(--padding);
-    }
-    h1 { font-size: 2rem; color: var(--accent); }
-    h2 { font-size: 1.5rem; margin-top: var(--padding); }
-    p { margin-top: 0.5rem; }
-    button {
-      display: inline-block;
-      margin-top: var(--padding);
-      padding: 0.5rem 1rem;
-      font-size: 1rem;
-      background: var(--btn-bg);
-      color: var(--btn-fg);
-      border: none;
-      border-radius: 4px;
-      cursor: pointer;
-    }
-    button:hover {
-      opacity: 0.9;
-    }
-    footer { text-align: center; font-size: 0.875rem; }
-  </style>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Start</title>
+<link rel="stylesheet" href="styles.css">
 </head>
+
 <body>
-  <header>
-    <h1>oSTART</h1>
-    <p>
-      A Bookmark of tools, currently used regularly, and the ones experimenting to see if they fits in.
-    </p>
-    <p>
-      <input type="checkbox" id="newTabToggle">
-      <label for="newTabToggle">Open all links in new tab</label>
-    </p>
-    <p>
-      <button id="reloadBtn">Reload</button>
-    </p>
-  </header>
-  
-  <main>
-    <section>
-      <h2>Regular</h2>
-      <p>
-        <ul>
-          <li><a href="https://news.ycombinator.com">Hacker News</a></li>
-          <li><a href="https://kagi.com">Kagi</a></li>
-        </ul>
-      </p>
-    </section>
-    <section>
-      <h2>Primary</h2>
-      <p>
-        <ul>
-          <li><a href="https://chatgpt.com">ChatGPT</a></li>
-          <li><a href="https://gemini.google.com">Google Gemini</a></li>
-          <li><a href="https://www.perplexity.ai">Perplexity</a></li>
-        </ul>
-      </p>
-    </section>
-    <section>
-      <h2>Experimenting</h2>
-      <p>
-        <ul>
-          <li><a href="https://www.magicpath.ai">MagicPath</a></li>
-          <li><a href="https://emergent.sh">Emergent</a></li>
-          <li><a href="https://n8n.io">n8n</a></li>
-          <li><a href="https://leta.mullvad.net">Leta</a> Mullvad’s Search Engine</li>
-        </ul>
-      </p>
-    </section>
-  </main>
-  
-  <footer>
-    <small>By <a href="https://brajeshwar.com">Brajeshwar</a> <a href="https://oinam.com">Oinam</a></small>
-  </footer>
+  <div class="container">
+    <header class="header">
+      <div class="header-content">
+        <a href="/" class="brand">
+          <div class="logo">
+            <img src="oinam-logo.svg" alt="Oinam Start" width="40" height="40">
+          </div>
+          <div class="brand-text">
+            <h1 class="title">Start</h1>
+          </div>
+        </a>
+        <div class="header-actions">
+          <div class="search-container">
+            <input 
+            type="text" 
+            id="search-input" 
+            placeholder="Search projects, articles, tutorials... (⌘K)"
+            class="search-input"
+            >
 
-  <script>
-    // Only register SW in production
-    if ('serviceWorker' in navigator) {
-      const host = window.location.host; // "localhost:3000", "127.0.0.1:9000", etc.
-      const isLocal = host.includes('localhost') || host.startsWith('127.0.0.1');
-      if (!isLocal) {
-        navigator.serviceWorker.register('sw.js')
-          .then(() => console.log('SW registered'))
-          .catch(err => console.error('SW failed:', err));
-      } else {
-        console.log('Skipping Service Worker on local development host:', host);
-      }
-    }
+            <kbd class="search-shortcut">⌘ K</kbd>
+          </div>
+          <div class="theme-toggle">
+            <button id="theme-toggle" class="theme-button" title="Toggle theme">
+              <svg class="theme-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <circle cx="12" cy="12" r="9"/>
+                <path d="M12 3v18M12 3a9 9 0 0 1 0 18" fill="currentColor" stroke="none"/>
+              </svg>
+            </button>
+          </div>
+        </div>
+      </div>
+    </header>
 
-    // Force-reload handler: clear caches then reload
-    document.getElementById('reloadBtn').addEventListener('click', async () => {
-      if ('caches' in window) {
-        const keys = await caches.keys();
-        await Promise.all(keys.map(key => caches.delete(key)));
-        console.log('All caches cleared:', keys);
-      }
-      // Optionally also unregister SW to force a fresh install next load
-      if (navigator.serviceWorker) {
-        const regs = await navigator.serviceWorker.getRegistrations();
-        await Promise.all(regs.map(reg => reg.unregister()));
-        console.log('Service worker unregistered');
-      }
-      // Finally, reload the page from network
-      window.location.reload(true);
-    });
-  </script>
+    <div class="main-wrapper">
+      <main class="main">
+        <div class="main-header">
+          <div class="breadcrumb">
+            <!-- Category navigation will be populated here -->
+          </div>
+          <div class="view-toggle">
+            <button id="view-toggle" class="view-button" title="Toggle view">
+              <svg class="view-icon grid-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <rect x="3" y="3" width="7" height="7"/>
+                <rect x="14" y="3" width="7" height="7"/>
+                <rect x="14" y="14" width="7" height="7"/>
+                <rect x="3" y="14" width="7" height="7"/>
+              </svg>
+              <svg class="view-icon list-icon" style="display: none;" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <line x1="8" y1="6" x2="21" y2="6"/>
+                <line x1="8" y1="12" x2="21" y2="12"/>
+                <line x1="8" y1="18" x2="21" y2="18"/>
+                <line x1="3" y1="6" x2="3.01" y2="6"/>
+                <line x1="3" y1="12" x2="3.01" y2="12"/>
+                <line x1="3" y1="18" x2="3.01" y2="18"/>
+              </svg>
+            </button>
+          </div>
+        </div>
 
-  <script>
-    // open links in new tab if the user selects the option
-    const chk = document.getElementById('newTabToggle');
-    const STORAGE_KEY = 'openInNewTab';
+        <div class="directory-grid" id="directory-grid">
+          <!-- Listing items will be populated here -->
+        </div>
 
-    // Initialize checkbox from localStorage
-    const saved = localStorage.getItem(STORAGE_KEY);
-    if (saved !== null) {
-      chk.checked = saved === 'true';
-    }
+        <div class="empty-state" id="empty-state" style="display: none;">
+          <h3>No items found</h3>
+          <p>Try adjusting your search terms or browse different categories.</p>
+        </div>
+      </main>
 
-    // Save whenever user toggles
-    chk.addEventListener('change', () => {
-      localStorage.setItem(STORAGE_KEY, chk.checked);
-    });
+      <aside class="sidebar">
+        <div class="sidebar-section">
+          <h3 class="sidebar-title">
+            Primary
+          </h3>
+          <div class="highlights-list" id="highlights-list">
+            <!-- Highlights will be populated here from sidebar.md -->
+          </div>
+        </div>
+      </aside>
+    </div>
+  </div>
 
-    // Intercept link clicks
-    document.body.addEventListener('click', e => {
-      const link = e.target.closest('a');
-      if (!link || !link.href) return;
+<script src="marked-15.0.12-min.js"></script>
+<script src="script.js"></script>
 
-      if (chk.checked) {
-        e.preventDefault();
-        window.open(link.href, '_blank', 'noopener');
-      }
-    });
-  </script>
 </body>
 </html>
