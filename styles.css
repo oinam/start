@@ -676,6 +676,13 @@ body {
   overflow: hidden;
 }
 
+.item-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.25rem;
+  margin: 0.5rem 0;
+}
+
 .item-meta {
   display: flex;
   align-items: center;

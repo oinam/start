@@ -339,15 +339,8 @@ class ListingManager {
   }
 
   mapCategoryToType(category) {
-    const typeMap = {
-      'projects': 'project',
-      'articles': 'article',
-      'tutorials': 'tutorial',
-      'templates': 'template',
-      'design': 'design',
-      'resources': 'resource'
-    };
-    return typeMap[category] || 'project';
+    // Remove hard-coded mapping, just return the category name in lowercase
+    return category.toLowerCase();
   }
 
   getCurrentItems() {
@@ -523,14 +516,22 @@ class UIManager {
     // Use the ViewManager's current view state if available
     const viewMode = window.viewManager ? window.viewManager.currentView : (localStorage.getItem('view') || 'grid');
     
+    // Create tags HTML if tags exist
+    const tagsHTML = item.tags && item.tags.length > 0 
+      ? `<div class="item-tags">${item.tags.map(tag => `<span class="tag">${this.escapeHtml(tag)}</span>`).join('')}</div>`
+      : '';
+    
     if (viewMode === 'list') {
       return `
         <a href="${item.url}" target="_blank" rel="noopener noreferrer" class="listing-item" data-url="${item.url}">
           <div class="item-content">
             <h3 class="item-title">${this.escapeHtml(item.title)}</h3>
             <p class="item-description">${this.escapeHtml(item.description)}</p>
-            <span class="item-type">${this.escapeHtml(item.category)}</span>
-            <span class="item-created">${item.created}</span>
+            ${tagsHTML}
+            <div class="item-meta">
+              <span class="item-type">${this.escapeHtml(item.category)}</span>
+              <span class="item-created">${item.created}</span>
+            </div>
           </div>
         </a>
       `;
@@ -541,6 +542,7 @@ class UIManager {
         <div class="item-content">
           <h3 class="item-title">${this.escapeHtml(item.title)}</h3>
           <p class="item-description">${this.escapeHtml(item.description)}</p>
+          ${tagsHTML}
           <div class="item-meta">
             <span class="item-type">${item.type}</span>
             <span class="item-created">${item.created}</span>

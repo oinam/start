@@ -1,11 +1,12 @@
 - Hacker News
   - url: https://news.ycombinator.com
   - desc: Technology News
-
 - ChatGPT
   - url: https://chatgpt.com
-  - desc: OpenAI's Chat
-  
+  - desc: OpenAI's Chat  
 - Google Gemini
   - url: https://gemini.google.com/
   - desc: Google's AI but not that Google AI
+- Arts & Letters Daily
+  - url: https://www.aldaily.com
+  - desc: 
