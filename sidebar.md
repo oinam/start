@@ -1,12 +1,18 @@
 - Hacker News
   - url: https://news.ycombinator.com
-  - desc: Technology News
-- ChatGPT
-  - url: https://chatgpt.com
-  - desc: OpenAI's Chat  
-- Google Gemini
-  - url: https://gemini.google.com/
-  - desc: Google's AI but not that Google AI
+  - desc: Social news focused on technology, startups, computer science, and entrepreneurship.
 - Arts & Letters Daily
   - url: https://www.aldaily.com
-  - desc: 
+  - desc: A long-running (since 1998-SEP) web portal and aggregator of writing across the humanities—curating articles, essays, book reviews, and opinion pieces from major publications and magazines.
+- ChatGPT
+  - url: https://chatgpt.com
+  - desc: An AI-powered conversational assistant developed by OpenAI.
+- Google Gemini
+  - url: https://gemini.google.com/
+  - desc: A family of advanced multimodal AI models developed by Google DeepMind, designed to understand and generate text, code, images, audio, and video across devices and applications.
+- Grammarly
+  - url: https://app.grammarly.com/
+  - desc: An AI assistant for everyday communication.
+- Todoist
+  - url: https://app.todoist.com/
+  - desc: Todoist brings calm and clarity to your team's day.

@@ -353,7 +353,32 @@ class ListingManager {
   navigateToCategory(category) {
     this.currentCategory = category;
     this.filteredData = this.getCurrentItems();
+    this.updateURL();
     return true;
+  }
+
+
+
+  updateURL() {
+    if (this.currentCategory !== 'all') {
+      window.history.pushState({}, '', `/#${this.currentCategory.toLowerCase()}`);
+    } else {
+      window.history.pushState({}, '', '/');
+    }
+  }
+
+  initializeFromURL() {
+    const hash = window.location.hash;
+    if (hash.startsWith('#')) {
+      const category = hash.slice(1);
+      const categories = this.getCategories();
+      const matchedCategory = categories.find(c => c.toLowerCase() === category);
+      if (matchedCategory) {
+        this.navigateToCategory(matchedCategory);
+        return true;
+      }
+    }
+    return false;
   }
 
   search(query) {
@@ -366,7 +391,7 @@ class ListingManager {
     this.filteredData = this.getCurrentItems().filter(item =>
       item.title.toLowerCase().includes(searchTerm) ||
       item.description.toLowerCase().includes(searchTerm) ||
-      item.tags.some(tag => tag.toLowerCase().includes(searchTerm))
+      (item.tags && item.tags.some(tag => tag.toLowerCase().includes(searchTerm)))
     );
     
     return this.filteredData;
@@ -380,6 +405,8 @@ class ListingManager {
     const categories = [...new Set(this.data.map(item => item.category))];
     return ['all', ...categories];
   }
+
+
 }
 
 // UI Manager
@@ -396,8 +423,10 @@ class UIManager {
   }
 
   init() {
+    this.listingManager.initializeFromURL();
     this.render();
     this.setupEventListeners();
+    this.setupUrlHandling();
   }
 
   setupEventListeners() {
@@ -419,6 +448,7 @@ class UIManager {
     });
 
     // Global keyboard shortcut for search
+    // Keyboard shortcuts
     document.addEventListener('keydown', (e) => {
       if ((e.metaKey || e.ctrlKey) && e.key === 'k') {
         e.preventDefault();
@@ -427,8 +457,14 @@ class UIManager {
       }
     });
 
-    // Update shortcut display based on platform
     this.updateShortcutDisplay();
+  }
+
+  setupUrlHandling() {
+    window.addEventListener('popstate', () => {
+      this.listingManager.initializeFromURL();
+      this.render();
+    });
   }
 
   updateShortcutDisplay() {
@@ -475,9 +511,8 @@ class UIManager {
     this.categoryNav.querySelectorAll('.breadcrumb-item').forEach(item => {
       item.addEventListener('click', (e) => {
         const category = e.currentTarget.getAttribute('data-category');
+        this.searchInput.value = '';
         if (this.listingManager.navigateToCategory(category)) {
-          this.searchInput.value = '';
-          this.listingManager.search('');
           this.render();
         }
       });
@@ -528,10 +563,7 @@ class UIManager {
             <h3 class="item-title">${this.escapeHtml(item.title)}</h3>
             <p class="item-description">${this.escapeHtml(item.description)}</p>
             ${tagsHTML}
-            <div class="item-meta">
-              <span class="item-type">${this.escapeHtml(item.category)}</span>
-              <span class="item-created">${item.created}</span>
-            </div>
+            <div class="item-date">Added: ${item.created}</div>
           </div>
         </a>
       `;
@@ -543,13 +575,15 @@ class UIManager {
           <h3 class="item-title">${this.escapeHtml(item.title)}</h3>
           <p class="item-description">${this.escapeHtml(item.description)}</p>
           ${tagsHTML}
-          <div class="item-meta">
-            <span class="item-type">${item.type}</span>
-            <span class="item-created">${item.created}</span>
-          </div>
+          <div class="item-date">Added: ${item.created}</div>
         </div>
       </a>
     `;
+  }
+
+  updateSidebarStats() {
+    // This method can be used to update sidebar statistics if needed
+    // Currently just a placeholder to prevent errors
   }
 
   escapeHtml(text) {
