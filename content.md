@@ -47,7 +47,7 @@
   - date: Jun 12, 2025
   - desc: Open Source all-in-one AI application.
 - Hyperaide
-  - url: https://www.hyperaide.comis
+  - url: https://www.hyperaide.com
   - tags: AI, Assistant
   - date: Jun 12, 2025
   - desc: AI-powered productivity assistant that streamlines task management, eliminates friction, and helps you accomplish more with less effort.
@@ -105,6 +105,11 @@
   - tags: LLM, score
   - date: Jun 12, 2025
   - desc: Analyze and compare AI models across benchmarks, pricing, and capabilities.
+- GenAI Image Showdown
+  - url: https://genai-showdown.specr.net
+  - tags: leaderboard, comparison
+  - date: Jun 15, 2025
+  - desc: A comparison of various SOTA generative image models on specific prompts and challenges with a strong emphasis placed on adherence.
 - AlternativeOSS
   - url: https://alternativeoss.com
   - tags: Alternatives, Open Source
