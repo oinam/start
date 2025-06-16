@@ -59,6 +59,57 @@
   - tags: AI, Terminal, Open Source, Chat
   - date: Jun 13, 2025
   - desc: Aider lets you pair program with LLMs to start a new project or build on your existing codebase.
+- Manus
+  - url: https://manus.im/
+  - tags: 
+  - date: Jun 16, 2025
+  - desc: 
+- Ideogram
+  - url: https://ideogram.ai/
+  - tags: images, GenAI
+  - date: Jun 16, 2025
+  - desc: Generate Pictures
+
+# Research
+
+- Co-Storm
+  - url: https://storm.genie.stanford.edu
+  - tags: research, prototype
+  - date: Jun 13, 2025
+  - desc: Aider lets you pair program with LLMs to start a new project or build on your existing codebase.
+
+# Tools
+
+- Sourcetable
+  - url: https://sourcetable.com
+  - tags: spreadsheet
+  - date: Jun 16, 2025
+  - desc: The AI Spreadsheet.
+- n8n
+  - url: https://n8n.io
+  - tags: automation, workflow
+  - date: Jun 16, 2025
+  - desc: Flexible AI workflow automation.
+- JSON Crack
+  - url: https://jsoncrack.com
+  - tags: JSON
+  - date: Jun 16, 2025
+  - desc: The best online JSON viewer to visualize, format and explore.
+- TableConvert
+  - url: https://tableconvert.com/html-to-markdown
+  - tags: table, markdown
+  - date: Jun 16, 2025
+  - desc: Convert HTML Table to Markdown Table Online.
+- Favic-o-Matic
+  - url: https://favicomatic.com
+  - tags: favicon, icon
+  - date: Jun 16, 2025
+  - desc: Favic-o-Matic generates favicons, both .ico & .png.
+- Colourise
+  - url: https://colourise.com
+  - tags: color
+  - date: Jun 16, 2025
+  - desc: Colorize Photo Online Free with AI.
 
 # Lab
 
@@ -97,6 +148,32 @@
   - tags: Design
   - date: Jun 13, 2025
   - desc: Onlook lets you visually edit your React websites or webapps and  write your changes back to code in real-time
+- Napkin
+  - url: https://www.napkin.ai
+  - tags: Design, Presentation
+  - date: Jun 16, 2025
+  - desc: Napkin turns your text into visuals so sharing your ideas is quick and effective.
+- SpeakMyVoice
+  - url: https://speakmyvoice.com
+  - tags: voice, audio
+  - date: Jun 16, 2025
+  - desc: With SpeakMyVoice, you're always part of the conversation.
+- Affogato
+  - url: https://affogato.ai
+  - tags: GenAI, character
+  - date: Jun 16, 2025
+  - desc: AI Characters that Talk, Pose, and Sell for you.
+- PowerDrill
+  - url: https://powerdrill.ai
+  - tags: data
+  - date: Jun 16, 2025
+  - desc: AI for serious data work.
+- oTranscribe
+  - url: https://otranscribe.com
+  - tags: transcription
+  - date: Jun 16, 2025
+  - desc: https://otranscribe.com
+
 
 # References
 
@@ -140,3 +217,8 @@
   - tags: AI, Prompts
   - date: Jun 13, 2025
   - desc: Explore our curated collection of AI prompts to enhance your interactions and boost productivity.
+- IT Tools
+  - url: https://it-tools.tech
+  - tags: tools, utilities
+  - date: Jun 16, 2025
+  - desc: IT Tools and Utilities
