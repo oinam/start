@@ -61,9 +61,9 @@
   - desc: Aider lets you pair program with LLMs to start a new project or build on your existing codebase.
 - Manus
   - url: https://manus.im/
-  - tags: 
+  - tags: Chat
   - date: Jun 16, 2025
-  - desc: 
+  - desc: Manus is a general AI agent
 - Ideogram
   - url: https://ideogram.ai/
   - tags: images, GenAI
