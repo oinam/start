@@ -1,0 +1,32 @@
+# Tools
+
+- Sourcetable
+  - url: https://sourcetable.com
+  - tags: spreadsheet
+  - date: Jun 16, 2025
+  - desc: The AI Spreadsheet.
+- n8n
+  - url: https://n8n.io
+  - tags: automation, workflow
+  - date: Jun 16, 2025
+  - desc: Flexible AI workflow automation.
+- JSON Crack
+  - url: https://jsoncrack.com
+  - tags: JSON
+  - date: Jun 16, 2025
+  - desc: The best online JSON viewer to visualize, format and explore.
+- TableConvert
+  - url: https://tableconvert.com/html-to-markdown
+  - tags: table, markdown
+  - date: Jun 16, 2025
+  - desc: Convert HTML Table to Markdown Table Online.
+- Favicon Generator
+  - url: https://realfavicongenerator.net
+  - tags: favicon, icon
+  - date: Jun 16, 2025
+  - desc: Favicon generator.
+- Colourise
+  - url: https://colourise.com
+  - tags: color
+  - date: Jun 16, 2025
+  - desc: Colorize Photo Online Free with AI.

@@ -1,0 +1,62 @@
+# Lab
+
+- Magic Path
+  - url: https://www.magicpath.ai
+  - tags: AI, design
+  - date: Jun 12, 2025
+  - desc: AI assisted Design
+- TLDraw Computer
+  - url: https://computer.tldraw.com
+  - tags: AI, Canvas
+  - date: Jun 13, 2025
+  - desc: An infinite canvas for natural language computing
+- Your Life in Weeks
+  - url: https://lifeweeks.app
+  - tags: Life, Weeks
+  - date: Jun 13, 2025
+  - desc: Create a map of your life where each week is a little box.
+- Yupp
+  - url: https://yupp.ai
+  - tags: AI, Chat, All-in-One
+  - date: Jun 13, 2025
+  - desc: Check out the best answers from all the latest AIs.
+- Index
+  - url: https://index.inc
+  - tags: Projects
+  - date: Jun 13, 2025
+  - desc: The product-native companion app for Linear. Collect ideas, manage feedback, and build roadmaps.
+- Idea Browser
+  - url: https://www.ideabrowser.com
+  - tags: Ideas, Startups, Projects
+  - date: Jun 13, 2025
+  - desc: Get ideas for profitable startups, trending keywords, and go-to-market tactics, powered by data.
+- OnLook
+  - url: https://onlook.com 
+  - tags: Design
+  - date: Jun 13, 2025
+  - desc: Onlook lets you visually edit your React websites or webapps and  write your changes back to code in real-time
+- Napkin
+  - url: https://www.napkin.ai
+  - tags: Design, Presentation
+  - date: Jun 16, 2025
+  - desc: Napkin turns your text into visuals so sharing your ideas is quick and effective.
+- SpeakMyVoice
+  - url: https://speakmyvoice.com
+  - tags: voice, audio
+  - date: Jun 16, 2025
+  - desc: With SpeakMyVoice, you're always part of the conversation.
+- Affogato
+  - url: https://affogato.ai
+  - tags: GenAI, character
+  - date: Jun 16, 2025
+  - desc: AI Characters that Talk, Pose, and Sell for you.
+- PowerDrill
+  - url: https://powerdrill.ai
+  - tags: data
+  - date: Jun 16, 2025
+  - desc: AI for serious data work.
+- oTranscribe
+  - url: https://otranscribe.com
+  - tags: transcription
+  - date: Jun 16, 2025
+  - desc: https://otranscribe.com

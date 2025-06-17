@@ -100,11 +100,11 @@
   - tags: table, markdown
   - date: Jun 16, 2025
   - desc: Convert HTML Table to Markdown Table Online.
-- Favic-o-Matic
-  - url: https://favicomatic.com
+- Favicon Generator
+  - url: https://realfavicongenerator.net
   - tags: favicon, icon
   - date: Jun 16, 2025
-  - desc: Favic-o-Matic generates favicons, both .ico & .png.
+  - desc: Favicon generator.
 - Colourise
   - url: https://colourise.com
   - tags: color

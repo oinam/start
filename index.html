@@ -1244,14 +1244,43 @@ class ListingManager {
     this.currentCategory = 'all';
     this.data = [];
     this.filteredData = [];
+    this.markdownFiles = [
+      'relations.md',
+      'administration.md',
+      'ai-assistants.md',
+      'build.md',
+      'research.md',
+      'tools.md',
+      'lab.md',
+      'references.md'
+    ];
     this.loadMarkdownData();
   }
 
   async loadMarkdownData() {
     try {
-      const response = await fetch('content.md');
-      const markdownText = await response.text();
-      this.data = this.parseMarkdown(markdownText);
+      const allData = [];
+      
+      // Load all markdown files concurrently
+      const promises = this.markdownFiles.map(async (filename) => {
+        try {
+          const response = await fetch(filename);
+          const markdownText = await response.text();
+          return this.parseMarkdown(markdownText);
+        } catch (error) {
+          console.warn(`Error loading ${filename}:`, error);
+          return [];
+        }
+      });
+      
+      const results = await Promise.all(promises);
+      
+      // Combine all results into a single array
+      for (const items of results) {
+        allData.push(...items);
+      }
+      
+      this.data = allData;
       this.filteredData = this.data;
       return true;
     } catch (error) {
@@ -1479,8 +1508,8 @@ class UIManager {
       const isMac = navigator.platform.toUpperCase().indexOf('MAC') >= 0;
       const shortcutText = isMac ? '⌘ K' : 'Ctrl + K';
       const placeholderText = isMac ? 
-        'Search projects, articles, tutorials... (⌘ K)' : 
-        'Search projects, articles, tutorials... (Ctrl + K)';
+        'Search ... (⌘ K)' : 
+        'Search ... (Ctrl + K)';
       
       shortcutElement.textContent = shortcutText;
       placeholder.placeholder = placeholderText;

@@ -1,0 +1,47 @@
+# References
+
+- LLM Leaderboard
+  - url: https://llm-stats.com
+  - tags: LLM, score
+  - date: Jun 12, 2025
+  - desc: Analyze and compare AI models across benchmarks, pricing, and capabilities.
+- GenAI Image Showdown
+  - url: https://genai-showdown.specr.net
+  - tags: leaderboard, comparison
+  - date: Jun 15, 2025
+  - desc: A comparison of various SOTA generative image models on specific prompts and challenges with a strong emphasis placed on adherence.
+- AlternativeOSS
+  - url: https://alternativeoss.com
+  - tags: Alternatives, Open Source
+  - date: Jun 13, 2025
+  - desc: Find and compare the best open source alternatives to popular software tools. Get weekly recommendations in your inbox.
+- European Alternative
+  - url: https://european-alternatives.eu
+  - tags: Europe, Alternatives
+  - date: Jun 13, 2025
+  - desc: We help you find European alternatives for digital service and products, like cloud services and SaaS products.
+- OpenAlternative
+  - url: https://openalternative.co
+  - tags: Open Source, 
+  - date: Jun 13, 2025
+  - desc: A curated collection of the best open source alternatives to everyday SaaS products. Save money with reliable tools hand-picked for you.
+- Buy Once Software
+  - url: https://buyoncesoftware.com
+  - tags: Subscription, Software
+  - date: Jun 13, 2025
+  - desc: Discover software you can buy once and own forever--no recurring charges, just tools that work for you, for life.
+- Prompts Chat
+  - url: https://prompts.chat
+  - tags: AI, Prompts, Chat
+  - date: Jun 13, 2025
+  - desc: A curated collection of effective prompts for ChatGPT and other AI assistants.
+- Prompt Library
+  - url: https://www.promptly.fyi/library
+  - tags: AI, Prompts
+  - date: Jun 13, 2025
+  - desc: Explore our curated collection of AI prompts to enhance your interactions and boost productivity.
+- IT Tools
+  - url: https://it-tools.tech
+  - tags: tools, utilities
+  - date: Jun 16, 2025
+  - desc: IT Tools and Utilities
