@@ -1,4 +1,4 @@
-# Oinam’s START
+# Start
 
 > A Browser Start Page.
 

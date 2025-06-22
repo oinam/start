@@ -59,4 +59,9 @@
   - url: https://otranscribe.com
   - tags: transcription
   - date: Jun 16, 2025
-  - desc: https://otranscribe.com
+  - desc: A web app to take the pain out of transcribing recorded interviews.
+- Suna
+  - url: https://www.suna.so
+  - tags: Agent
+  - date: Jun 22, 2025
+  - desc: Open Source Generalist AI Agent
