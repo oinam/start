@@ -1,10 +1,5 @@
 # References
 
-- Hacker News Source
-  - url: https://github.com/brajeshwar/hackernews-source
-  - tags: News, Hacker News
-  - date: Jun 23, 2025
-  - desc: Hacker News Submission Sources by Brajeshwar.
 - LLM Leaderboard
   - url: https://llm-stats.com
   - tags: LLM, score
