@@ -15,6 +15,11 @@
   - tags: CRM, network
   - date: Jun 13, 2025
   - desc: Leverage our relationship intelligence platform to build pipeline, multithread deals, accelerate revenue, expand accounts, and drive referrals.
+- Distill
+  - url: https://distill.fyi
+  - tags: CRM, network, people
+  - date: Jun 23, 2025
+  - desc: Detailed, accurate, and easy-to-read profiles on the people and companies you'd like to learn about
 - Happentence
   - url: https://happenstance.ai/
   - tags: CRM
