@@ -65,3 +65,8 @@
   - tags: Agent
   - date: Jun 22, 2025
   - desc: Open Source Generalist AI Agent
+- Msty
+  - url: https://msty.app
+  - tags: Chat
+  - date: Jun 23, 2025
+  - desc: Uses local and online AI models. $199 Lifetime License.
