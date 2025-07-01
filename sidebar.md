@@ -1,3 +1,6 @@
+- Void
+  - url: https://void.oinam.com
+  - desc: Do Nothing. Stay Quiet. Just Be Here.
 - Hacker News
   - url: https://news.ycombinator.com
   - desc: Social news focused on technology, startups, computer science, and entrepreneurship.
