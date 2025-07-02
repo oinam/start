@@ -1,7 +1,7 @@
 # Research
 
-- Co-Storm
+- Storm
   - url: https://storm.genie.stanford.edu
   - tags: research, prototype
   - date: Jun 13, 2025
-  - desc: Aider lets you pair program with LLMs to start a new project or build on your existing codebase.
+  - desc: An LLM-powered knowledge curation system that researches a topic and generates a full-length report with citations. [source](https://github.com/stanford-oval/storm/)
