@@ -1,5 +1,10 @@
 # Lab
 
+- Braintrust
+  - url: https://www.braintrust.dev
+  - tags: build
+  - date: Jul 2, 2025
+  - desc: Braintrust is the end-to-end platform for building AI apps.
 - Magic Path
   - url: https://www.magicpath.ai
   - tags: AI, design

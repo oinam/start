@@ -30,3 +30,13 @@
   - tags: color
   - date: Jun 16, 2025
   - desc: Colorize Photo Online Free with AI.
+- Web-Check
+  - url: https://web-check.as93.net/
+  - tags: web, tool, scan, security, analysis
+  - date: Jul 2, 2025
+  - desc: All-in-one OSINT tool
+- Colorify Rocks
+  - url: https://colorify.rocks
+  - tags: web, color, palette, generator
+  - date: Jul 3, 2025
+  - desc: Create stunning color palettes instantly with AI.
