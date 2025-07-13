@@ -10,6 +10,11 @@
   - tags: leaderboard, comparison
   - date: Jun 15, 2025
   - desc: A comparison of various SOTA generative image models on specific prompts and challenges with a strong emphasis placed on adherence.
+- The Book of Secret Knowledge
+  - url: https://github.com/trimstray/the-book-of-secret-knowledge
+  - tags: list, tools
+  - date: Jul 13, 2025
+  - desc: A collection of inspiring lists, manuals, cheatsheets, blogs, hacks, one-liners, cli/web tools, and more.
 - AlternativeOSS
   - url: https://alternativeoss.com
   - tags: Alternatives, Open Source
