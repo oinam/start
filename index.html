@@ -6,1678 +6,254 @@
 <title>Start</title>
 
 <style>
-/* Theme Variables */
-
-/* Monochrome Theme (Default) */
-:root {
-  /* Light Mode Colors */
-  --mono-background: oklch(100% 0 0);
-  --mono-foreground: oklch(15% 0.02 285);
-  --mono-card: oklch(100% 0 0);
-  --mono-card-foreground: oklch(15% 0.02 285);
-  --mono-popover: oklch(100% 0 0);
-  --mono-popover-foreground: oklch(15% 0.02 285);
-  --mono-primary: oklch(25% 0.02 285);
-  --mono-primary-foreground: oklch(98% 0.005 240);
-  --mono-secondary: oklch(96% 0.005 240);
-  --mono-secondary-foreground: oklch(15% 0.02 285);
-  --mono-muted: oklch(96% 0.005 240);
-  --mono-muted-foreground: oklch(55% 0.01 245);
-  --mono-accent: oklch(96% 0.005 240);
-  --mono-accent-foreground: oklch(15% 0.02 285);
-  --mono-destructive: oklch(62% 0.2 25);
-  --mono-destructive-foreground: oklch(98% 0.005 240);
-  --mono-border: oklch(91% 0.01 245);
-  --mono-input: oklch(91% 0.01 245);
-  --mono-ring: oklch(15% 0.02 285);
-  --mono-list-border: oklch(91% 0.01 245 / 0.2);
-  --mono-list-alternate: oklch(95% 0 0);
-
-  /* Dark Mode Colors */
-  --mono-dark-background: oklch(15% 0.02 285);
-  --mono-dark-foreground: oklch(98% 0.005 240);
-  --mono-dark-card: oklch(15% 0.02 285);
-  --mono-dark-card-foreground: oklch(98% 0.005 240);
-  --mono-dark-popover: oklch(15% 0.02 285);
-  --mono-dark-popover-foreground: oklch(98% 0.005 240);
-  --mono-dark-primary: oklch(98% 0.005 240);
-  --mono-dark-primary-foreground: oklch(25% 0.02 285);
-  --mono-dark-secondary: oklch(25% 0.02 270);
-  --mono-dark-secondary-foreground: oklch(98% 0.005 240);
-  --mono-dark-muted: oklch(25% 0.02 270);
-  --mono-dark-muted-foreground: oklch(65% 0.01 245);
-  --mono-dark-accent: oklch(25% 0.02 270);
-  --mono-dark-accent-foreground: oklch(98% 0.005 240);
-  --mono-dark-destructive: oklch(45% 0.15 25);
-  --mono-dark-destructive-foreground: oklch(98% 0.005 240);
-  --mono-dark-border: oklch(25% 0.02 270);
-  --mono-dark-input: oklch(25% 0.02 270);
-  --mono-dark-ring: oklch(84% 0.02 245);
-  --mono-dark-list-border: oklch(25% 0.02 270 / 0.15);
-  --mono-dark-list-alternate: oklch(20% 0.02 285);
-}
-
-/* Nord Theme Colors */
-:root {
-  /* Light Mode Colors - Snow Storm backgrounds, Polar Night text */
-  --nord-background: #eceff4; /* nord6 */
-  --nord-foreground: #2e3440; /* nord0 */
-  --nord-card: #e5e9f0; /* nord5 */
-  --nord-card-foreground: #2e3440; /* nord0 */
-  --nord-popover: #e5e9f0; /* nord5 */
-  --nord-popover-foreground: #2e3440; /* nord0 */
-  --nord-primary: #5e81ac; /* nord10 */
-  --nord-primary-foreground: #eceff4; /* nord6 */
-  --nord-secondary: #d8dee9; /* nord4 */
-  --nord-secondary-foreground: #3b4252; /* nord1 */
-  --nord-muted: #d8dee9; /* nord4 */
-  --nord-muted-foreground: #4c566a; /* nord3 */
-  --nord-accent: #d8dee9; /* nord4 */
-  --nord-accent-foreground: #2e3440; /* nord0 */
-  --nord-destructive: #bf616a; /* nord11 */
-  --nord-destructive-foreground: #eceff4; /* nord6 */
-  --nord-border: #434c5e; /* nord2 */
-  --nord-input: #d8dee9; /* nord4 */
-  --nord-ring: #81a1c1; /* nord9 */
-  --nord-list-border: #434c5e40; /* nord2 with transparency */
-  --nord-list-alternate: #e5e9f0; /* nord5 */
-
-  /* Dark Mode Colors - Polar Night backgrounds, Snow Storm text */
-  --nord-dark-background: #2e3440; /* nord0 */
-  --nord-dark-foreground: #eceff4; /* nord6 */
-  --nord-dark-card: #3b4252; /* nord1 */
-  --nord-dark-card-foreground: #eceff4; /* nord6 */
-  --nord-dark-popover: #3b4252; /* nord1 */
-  --nord-dark-popover-foreground: #eceff4; /* nord6 */
-  --nord-dark-primary: #88c0d0; /* nord8 */
-  --nord-dark-primary-foreground: #2e3440; /* nord0 */
-  --nord-dark-secondary: #434c5e; /* nord2 */
-  --nord-dark-secondary-foreground: #e5e9f0; /* nord5 */
-  --nord-dark-muted: #434c5e; /* nord2 */
-  --nord-dark-muted-foreground: #d8dee9; /* nord4 */
-  --nord-dark-accent: #434c5e; /* nord2 */
-  --nord-dark-accent-foreground: #eceff4; /* nord6 */
-  --nord-dark-destructive: #bf616a; /* nord11 */
-  --nord-dark-destructive-foreground: #eceff4; /* nord6 */
-  --nord-dark-border: #4c566a; /* nord3 */
-  --nord-dark-input: #434c5e; /* nord2 */
-  --nord-dark-ring: #8fbcbb; /* nord7 */
-  --nord-dark-list-border: #4c566a30; /* nord3 with transparency */
-  --nord-dark-list-alternate: #3b4252; /* nord1 */
-}
-
-/* Active Theme Color Assignment */
-:root {
-  /* Default to monochrome theme */
-  --color-background: var(--mono-background);
-  --color-foreground: var(--mono-foreground);
-  --color-card: var(--mono-card);
-  --color-card-foreground: var(--mono-card-foreground);
-  --color-popover: var(--mono-popover);
-  --color-popover-foreground: var(--mono-popover-foreground);
-  --color-primary: var(--mono-primary);
-  --color-primary-foreground: var(--mono-primary-foreground);
-  --color-secondary: var(--mono-secondary);
-  --color-secondary-foreground: var(--mono-secondary-foreground);
-  --color-muted: var(--mono-muted);
-  --color-muted-foreground: var(--mono-muted-foreground);
-  --color-accent: var(--mono-accent);
-  --color-accent-foreground: var(--mono-accent-foreground);
-  --color-destructive: var(--mono-destructive);
-  --color-destructive-foreground: var(--mono-destructive-foreground);
-  --color-border: var(--mono-border);
-  --color-input: var(--mono-input);
-  --color-ring: var(--mono-ring);
-  --color-list-border: var(--mono-list-border);
-  --color-list-alternate: var(--mono-list-alternate);
-
-  /* Typography and layout */
-  --font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
-  --font-family-mono: ui-monospace, SFMono-Regular, "SF Mono", Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
-  --radius: 0.5rem;
-}
-
-/* Nord Theme Override */
-:root[data-color-theme="nord"] {
-  --color-background: var(--nord-background);
-  --color-foreground: var(--nord-foreground);
-  --color-card: var(--nord-card);
-  --color-card-foreground: var(--nord-card-foreground);
-  --color-popover: var(--nord-popover);
-  --color-popover-foreground: var(--nord-popover-foreground);
-  --color-primary: var(--nord-primary);
-  --color-primary-foreground: var(--nord-primary-foreground);
-  --color-secondary: var(--nord-secondary);
-  --color-secondary-foreground: var(--nord-secondary-foreground);
-  --color-muted: var(--nord-muted);
-  --color-muted-foreground: var(--nord-muted-foreground);
-  --color-accent: var(--nord-accent);
-  --color-accent-foreground: var(--nord-accent-foreground);
-  --color-destructive: var(--nord-destructive);
-  --color-destructive-foreground: var(--nord-destructive-foreground);
-  --color-border: var(--nord-border);
-  --color-input: var(--nord-input);
-  --color-ring: var(--nord-ring);
-  --color-list-border: var(--nord-list-border);
-  --color-list-alternate: var(--nord-list-alternate);
-}
-
-/* Dark Mode Overrides */
-[data-theme="dark"] {
-  --color-background: var(--mono-dark-background);
-  --color-foreground: var(--mono-dark-foreground);
-  --color-card: var(--mono-dark-card);
-  --color-card-foreground: var(--mono-dark-card-foreground);
-  --color-popover: var(--mono-dark-popover);
-  --color-popover-foreground: var(--mono-dark-popover-foreground);
-  --color-primary: var(--mono-dark-primary);
-  --color-primary-foreground: var(--mono-dark-primary-foreground);
-  --color-secondary: var(--mono-dark-secondary);
-  --color-secondary-foreground: var(--mono-dark-secondary-foreground);
-  --color-muted: var(--mono-dark-muted);
-  --color-muted-foreground: var(--mono-dark-muted-foreground);
-  --color-accent: var(--mono-dark-accent);
-  --color-accent-foreground: var(--mono-dark-accent-foreground);
-  --color-destructive: var(--mono-dark-destructive);
-  --color-destructive-foreground: var(--mono-dark-destructive-foreground);
-  --color-border: var(--mono-dark-border);
-  --color-input: var(--mono-dark-input);
-  --color-ring: var(--mono-dark-ring);
-  --color-list-border: var(--mono-dark-list-border);
-  --color-list-alternate: var(--mono-dark-list-alternate);
-}
-
-/* Nord Dark Mode Override */
-:root[data-color-theme="nord"][data-theme="dark"] {
-  --color-background: var(--nord-dark-background);
-  --color-foreground: var(--nord-dark-foreground);
-  --color-card: var(--nord-dark-card);
-  --color-card-foreground: var(--nord-dark-card-foreground);
-  --color-popover: var(--nord-dark-popover);
-  --color-popover-foreground: var(--nord-dark-popover-foreground);
-  --color-primary: var(--nord-dark-primary);
-  --color-primary-foreground: var(--nord-dark-primary-foreground);
-  --color-secondary: var(--nord-dark-secondary);
-  --color-secondary-foreground: var(--nord-dark-secondary-foreground);
-  --color-muted: var(--nord-dark-muted);
-  --color-muted-foreground: var(--nord-dark-muted-foreground);
-  --color-accent: var(--nord-dark-accent);
-  --color-accent-foreground: var(--nord-dark-accent-foreground);
-  --color-destructive: var(--nord-dark-destructive);
-  --color-destructive-foreground: var(--nord-dark-destructive-foreground);
-  --color-border: var(--nord-dark-border);
-  --color-input: var(--nord-dark-input);
-  --color-ring: var(--nord-dark-ring);
-  --color-list-border: var(--nord-dark-list-border);
-  --color-list-alternate: var(--nord-dark-list-alternate);
-}
-
-/* Base styles */
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
-body {
-  font-family: var(--font-family);
-  background-color: var(--color-background);
-  color: var(--color-foreground);
-  line-height: 1.5;
-  transition: background-color 0.3s ease, color 0.3s ease;
-}
-
-.container {
-  max-width: 1400px;
-  margin: 0 auto;
-  padding: 0 1rem;
-  min-height: 100vh;
-}
-
-/* Header */
-.header {
-  border-bottom: 1px solid oklch(from var(--color-muted) calc(l - 0.25) c h);
-  padding: 1rem 0;
-  margin-bottom: 2rem;
-}
-
-.header-content {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  gap: 2rem;
-}
-
-/* Brand section with logo */
-.brand {
-  display: flex;
-  align-items: center;
-  gap: 1rem;
-  text-decoration: none;
-  color: inherit;
-  transition: opacity 0.2s ease;
-}
-
-.brand:hover {
-  opacity: 0.8;
-}
-
-.logo {
-  flex-shrink: 0;
-}
-
-.logo svg {
-  transition: transform 0.2s ease;
-}
-
-.logo svg:hover {
-  transform: scale(1.05);
-}
-
-.brand-text {
-  display: flex;
-  flex-direction: column;
-  gap: 0.25rem;
-}
-
-.title {
-  font-size: 1.75rem;
-  font-weight: 700;
-  color: var(--color-foreground);
-  margin: 0;
-  line-height: 1.2;
-}
-
-.header-actions {
-  display: flex;
-  align-items: center;
-  gap: 1rem;
-  flex: 1;
-  max-width: 600px;
-}
-
-/* Search */
-.search-container {
-  position: relative;
-  flex: 1;
-  min-width: 200px;
-}
-
-.search-input {
-  width: 100%;
-  padding: 0.5rem 4rem 0.5rem 2.5rem;
-  border: 1px solid var(--color-border);
-  border-radius: var(--radius);
-  background-color: var(--color-background);
-  color: var(--color-foreground);
-  font-size: 0.875rem;
-  transition: border-color 0.2s ease;
-}
-
-.search-input:focus {
-  outline: none;
-  border-color: var(--color-ring);
-  box-shadow: 0 0 0 2px oklch(from var(--color-ring) l c h / 0.2);
-}
-
-.search-input::placeholder {
-  color: var(--color-muted-foreground);
-}
-
-.search-shortcut {
-  position: absolute;
-  right: 0.75rem;
-  top: 50%;
-  transform: translateY(-50%);
-  background-color: var(--color-muted);
-  color: var(--color-muted-foreground);
-  border: 1px solid var(--color-border);
-  border-radius: calc(var(--radius) - 2px);
-  padding: 0.25rem 0.5rem;
-  font-size: 0.75rem;
-  font-family: var(--font-family-mono);
-  line-height: 1;
-}
-
-/* Theme toggle */
-.theme-toggle {
-  position: relative;
-}
-
-.theme-button {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  width: 2.5rem;
-  height: 2.5rem;
-  border: none;
-  background: none;
-  color: var(--color-foreground);
-  cursor: pointer;
-  transition: opacity 0.2s ease;
-}
-
-.theme-button:hover {
-  opacity: 0.7;
-}
-
-.theme-icon {
-  width: 1.25rem;
-  height: 1.25rem;
-}
-
-/* View toggle */
-.view-toggle {
-  margin-left: auto;
-}
-
-.view-button {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  width: 2.5rem;
-  height: 2.5rem;
-  border: none;
-  background: none;
-  color: var(--color-foreground);
-  cursor: pointer;
-  transition: opacity 0.2s ease;
-}
-
-.view-button:hover {
-  opacity: 0.7;
-}
-
-.view-icon {
-  width: 1.25rem;
-  height: 1.25rem;
-}
-
-/* Main header */
-.main-header {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  margin-bottom: 1.5rem;
-}
-
-/* Breadcrumb */
-.breadcrumb {
-  display: flex;
-  align-items: center;
-  gap: 0.5rem;
-}
-
-.breadcrumb-item {
-  padding: 0.5rem 1rem;
-  border: none;
-  border-radius: var(--radius);
-  background-color: transparent;
-  color: var(--color-muted-foreground);
-  font-size: 0.875rem;
-  cursor: pointer;
-  transition: all 0.2s ease;
-}
-
-.breadcrumb-item:hover {
-  background-color: var(--color-accent);
-  color: var(--color-accent-foreground);
-}
-
-.breadcrumb-item.active {
-  background-color: var(--color-accent);
-  color: var(--color-accent-foreground);
-}
-
-/* Main wrapper with sidebar */
-.main-wrapper {
-  display: grid;
-  grid-template-columns: 1fr 300px;
-  gap: 2rem;
-  align-items: start;
-}
-
-.main {
-  min-width: 0;
-}
-
-/* Listing grid */
-/* Directory grid */
-.directory-grid {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  gap: 1rem;
-  margin-bottom: 2rem;
-}
-
-/* Ensure grid is properly displayed */
-.directory-grid:not(.list-view) {
-  display: grid;
-}
-
-@media (max-width: 1200px) {
-  .directory-grid:not(.list-view) {
-    grid-template-columns: repeat(3, 1fr);
-  }
-}
-
-@media (max-width: 768px) {
-  .directory-grid:not(.list-view) {
-    grid-template-columns: repeat(2, 1fr);
-  }
-}
-
-@media (max-width: 480px) {
-  .directory-grid:not(.list-view) {
-    grid-template-columns: 1fr;
-  }
-  
-  .directory-grid.list-view .listing-item {
-    padding: 0.75rem 1rem !important;
-  }
-}
-
-/* List view styles */
-.directory-grid.list-view {
-  display: flex !important;
-  flex-direction: column;
-  gap: 0;
-  grid-template-columns: none !important;
-  width: 100%;
-}
-
-.directory-grid.list-view .listing-item {
-  display: block !important;
-  width: 100%;
-  padding: 1rem 1.5rem !important;
-  margin: 0;
-  border: none !important;
-  border-radius: 0 !important;
-  border-bottom: 1px solid var(--color-list-border) !important;
-  background: transparent !important;
-  min-height: auto;
-  transition: background-color 0.2s ease;
-  transform: none !important;
-  box-shadow: none !important;
-  text-decoration: none;
-  color: inherit;
-  box-sizing: border-box;
-}
-
-.directory-grid.list-view .listing-item:nth-child(even) {
-  background-color: var(--color-list-alternate) !important;
-}
-
-.directory-grid.list-view .listing-item:last-child {
-  border-bottom: none;
-}
-
-.directory-grid.list-view .listing-item:hover {
-  background-color: var(--color-accent) !important;
-  transform: none !important;
-  box-shadow: none !important;
-  border-color: transparent !important;
-  border-bottom-color: var(--color-list-border) !important;
-}
-
-.directory-grid.list-view .item-content {
-  display: grid !important;
-  grid-template-columns: 1.5fr 2fr 0.75fr 0.75fr;
-  align-items: center;
-  gap: 1rem;
-  width: 100%;
-  padding: 0 !important;
-  margin: 0 !important;
-}
-
-.directory-grid.list-view .item-title {
-  font-size: 0.95rem;
-  font-weight: 600;
-  margin: 0;
-  padding: 0;
-  color: var(--color-foreground);
-  line-height: 1.4;
-}
-
-.directory-grid.list-view .item-description {
-  margin: 0;
-  padding: 0;
-  font-size: 0.875rem;
-  color: var(--color-muted-foreground);
-  line-height: 1.4;
-  overflow: hidden;
-  text-overflow: ellipsis;
-  white-space: nowrap;
-  display: block;
-}
-
-.directory-grid.list-view .item-type {
-  font-size: 0.75rem;
-  padding: 0.2rem 0.5rem;
-  background-color: var(--color-secondary);
-  color: var(--color-secondary-foreground);
-  border-radius: calc(var(--radius) * 0.5);
-  text-transform: capitalize;
-  text-align: center;
-  display: inline-block;
-  margin: 0;
-}
-
-.directory-grid.list-view .item-meta {
-  display: contents;
-}
-
-/* Responsive list view */
-@media (max-width: 968px) {
-  .directory-grid.list-view .listing-item {
-    padding: 1rem !important;
-  }
-  
-  .directory-grid.list-view .item-content {
-    grid-template-columns: 1fr;
-    gap: 0.5rem;
-  }
-  
-  .directory-grid.list-view .item-title {
-    font-size: 1rem;
-  }
-  
-  .directory-grid.list-view .item-description {
-    white-space: normal;
-    display: -webkit-box;
-    -webkit-line-clamp: 2;
-    -webkit-box-orient: vertical;
-    overflow: hidden;
-  }
-  
-
-
-}
-
-@media (max-width: 768px) {
-  .main-header {
-    flex-direction: column;
-    gap: 1rem;
-    align-items: stretch;
+  :root {
+    /* Layout */
+    --body-width: 98%;
+    --body-width-max: 1600px;
+    
+    /* Spacing */
+    --space: 1rem;
+    --space-small: 0.5rem;
+    
+    /* Typography */
+    --font-family: system-ui, -apple-system, 'Segoe UI', 'Roboto', Ubuntu, Cantarell, 'Noto Sans', 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji', sans-serif;
+    --line-height: 1.6;
+    --heading-size: 1.25rem;
+    --heading-weight: 600;
+    --text-size: 1.1rem;
+    
+    /* Colors */
+    --color-gray-light: #f8fafc;
+    --color-gray: #f5f5f5;
+    --color-gray-dark: #d4d4d4;
+    --color-border: #e2e8f0;
+    --color-text: #262626;
+    --color-link: #3b82f6;
+    --color-link-hover: #1e40af;
+    
+    /* Other */
+    --border-radius: 7px;
   }
 
-  .breadcrumb {
-    flex-wrap: wrap;
-    gap: 0.5rem;
+  * {
+    box-sizing: border-box;
   }
 
-  .view-toggle {
-    align-self: flex-end;
-  }
-}
-
-.listing-item {
-  display: block;
-  padding: 1.5rem;
-  border: 1px solid var(--color-border);
-  border-radius: var(--radius);
-  background-color: var(--color-card);
-  text-decoration: none;
-  color: inherit;
-  cursor: pointer;
-  transition: all 0.2s ease;
-  position: relative;
-}
-
-.listing-item:hover {
-  background-color: var(--color-accent);
-  border-color: var(--color-ring);
-  transform: translateY(-2px);
-  box-shadow: 0 4px 12px oklch(from var(--color-ring) l c h / 0.15);
-}
-
-
-
-.item-content {
-  width: 100%;
-}
-
-.item-title {
-  font-weight: 600;
-  font-size: 1.125rem;
-  color: var(--color-foreground);
-  margin-bottom: 0.75rem;
-  line-height: 1.4;
-}
-
-.item-description {
-  color: var(--color-muted-foreground);
-  font-size: 0.875rem;
-  line-height: 1.5;
-  margin-bottom: 1rem;
-  display: -webkit-box;
-  -webkit-line-clamp: 3;
-  -webkit-box-orient: vertical;
-  overflow: hidden;
-}
-
-.item-tags {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 0.25rem;
-  margin: 0.5rem 0;
-}
-
-.tag {
-  padding: 0.2rem 0.5rem;
-  background-color: var(--color-secondary);
-  color: var(--color-secondary-foreground);
-  border-radius: 9999px;
-  font-size: 0.65rem;
-  font-weight: 400;
-  text-transform: lowercase;
-}
-
-.item-meta {
-  display: flex;
-  align-items: center;
-  gap: 0.75rem;
-  font-size: 0.75rem;
-  color: var(--color-muted-foreground);
-}
-
-.item-date {
-  font-size: 0.65rem;
-  color: var(--color-muted-foreground);
-  margin-top: 0.5rem;
-}
-
-/* Empty state */
-.empty-state {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  padding: 3rem 1rem;
-  text-align: center;
-}
-
-.empty-state h3 {
-  font-size: 1.25rem;
-  font-weight: 600;
-  color: var(--color-foreground);
-  margin-bottom: 0.5rem;
-}
-
-.empty-state p {
-  color: var(--color-muted-foreground);
-  max-width: 400px;
-}
-
-/* Responsive design */
-@media (max-width: 1024px) {
-  .main-wrapper {
-    grid-template-columns: 1fr;
-    gap: 1.5rem;
+  html, body {
+    height: 100%;
   }
 
-  .sidebar {
-    position: static;
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    gap: 1rem;
-    padding-left: 0;
-    border-left: none;
-    border-top: 1px solid var(--color-border);
-    padding-top: 2rem;
-  }
-}
+  body {
+    width: var(--body-width);
+    max-width: var(--body-width-max);
+    margin: var(--space) auto;
+    padding: 0;
 
-@media (max-width: 768px) {
-  .header-content {
-    flex-direction: column;
-    gap: 1rem;
+    font-family: var(--font-family);
+    font-size: var(--text-size);
+    line-height: var(--line-height);
+    
+    color: var(--color-text);
+    background: var(--color-gray);
   }
 
-  .brand {
-    align-self: flex-start;
+  h2 {
+    margin: 0 var(--space-small);
+    padding: 0;
+    
+    font-size: var(--heading-size);
+    font-weight: var(--heading-weight);
+    
+    color: var(--color-text);
+    border-bottom: 1px solid var(--color-gray-dark);
   }
 
-  .header-actions {
-    width: 100%;
-    justify-content: space-between;
-    max-width: none;
-  }
-
-  .search-container {
-    flex: 1;
-    min-width: 0;
-  }
-
-  .search-shortcut {
-    display: none;
-  }
-
-  .directory-grid {
-    grid-template-columns: 1fr;
-  }
-
-  .title {
-    font-size: 1.5rem;
-  }
-
-  .subtitle {
-    font-size: 0.8rem;
-  }
-
-  .sidebar {
-    grid-template-columns: 1fr;
-    padding-left: 0;
-    border-left: none;
-    border-top: 1px solid var(--color-border);
-    padding-top: 1.5rem;
-  }
-}
-
-@media (max-width: 480px) {
-  .container {
-    padding: 0 0.5rem;
-  }
-
-  .brand {
-    gap: 0.75rem;
-  }
-
-  .logo svg {
-    width: 32px;
-    height: 32px;
-  }
-
-  .title {
-    font-size: 1.25rem;
-  }
-
-  .subtitle {
-    font-size: 0.75rem;
-  }
-
-  .listing-item {
-    padding: 1rem;
-  }
-
-  .item-title {
-    font-size: 1rem;
-  }
-
-  .item-description {
-    -webkit-line-clamp: 2;
-  }
-
-  .tag {
-    font-size: 0.6rem;
-  }
-
-  .sidebar-section {
+  ul, ol {
+    list-style: none;
+    margin: var(--space) 0;
     padding: 0;
   }
-}
 
-/* Loading animation */
-.loading {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding: 2rem;
-}
+  li {
+    margin: 0;
+    padding: 0 var(--space-small);
+  }
 
-.loading-spinner {
-  width: 2rem;
-  height: 2rem;
-  border: 2px solid var(--color-border);
-  border-top: 2px solid var(--color-primary);
-  border-radius: 50%;
-  animation: spin 1s linear infinite;
-}
+  li:hover, li:active {
+    background: var(--color-gray);
+  }
 
-@keyframes spin {
-  0% { transform: rotate(0deg); }
-  100% { transform: rotate(360deg); }
-}
+  a, a:visited {
+    color: var(--color-link);
+    text-decoration: none;
+  }
 
-/* Sidebar */
-.sidebar {
-  position: sticky;
-  top: 2rem;
-  display: flex;
-  flex-direction: column;
-  gap: 2rem;
-  height: fit-content;
-  padding-left: 2rem;
-  border-left: 1px solid oklch(from var(--color-muted) calc(l - 0.25) c h);
-}
+  a:hover, a:active {
+    color: var(--color-link-hover);
+    text-decoration: underline;
+  }
 
-.sidebar-section {
-  padding: 0;
-}
+  home-container {
+    display: flex;
+    flex-direction: column;
+    gap: var(--space);
+  }
 
-.sidebar-title {
-  font-size: 1rem;
-  font-weight: 600;
-  color: var(--color-foreground);
-  margin-bottom: 1.25rem;
-  padding-bottom: 0.5rem;
-  border-bottom: 1px solid var(--color-border);
-}
+  .top-row {
+    display: flex;
+    flex-wrap: wrap;
+    gap: var(--space);
+  }
 
-/* Highlights list */
-.highlights-list {
-  display: flex;
-  flex-direction: column;
-  gap: 0;
-}
+  home-favorites,
+  home-main,
+  home-sidebar {
+    flex: 1;
+    min-width: calc(33.333% - var(--space) * 2/3); /* Ensure equal width with gap consideration */
+  }
 
-.highlight-item {
-  display: block;
-  padding: 1rem 0;
-  text-decoration: none;
-  color: inherit;
-  transition: all 0.2s ease;
-  cursor: pointer;
-  border-bottom: 1px solid var(--color-list-border);
-}
+  home-tmp {
+    width: 100%;
+    margin-top: calc(2 * var(--space));
+  }
 
-.highlight-item:last-child {
-  border-bottom: none;
-}
+  /* Tablet layout: 2 columns */
+  @media (max-width: 800px) {
+    home-favorites,
+    home-main,
+    home-sidebar {
+      min-width: calc(50% - var(--space) / 2); /* Two columns on tablet */
+    }
+    
+    /* Ensure the third item takes full width in the next row */
+    home-sidebar {
+      flex-basis: 100%;
+    }
+  }
 
-.highlight-item:hover {
-  opacity: 0.8;
-}
+  /* Mobile layout: 1 column */
+  @media (max-width: 640px) {
+    home-favorites,
+    home-main,
+    home-sidebar {
+      min-width: 100%; /* Full width on mobile */
+    }
+  }
 
-.highlight-title {
-  font-size: 0.95rem;
-  font-weight: 600;
-  color: var(--color-foreground);
-  margin-bottom: 0.5rem;
-}
+  home-favorites,
+  home-main,
+  home-sidebar,
+  home-tmp {
+    padding: var(--space);
+    
+    background: var(--color-gray-light);
+    border-radius: var(--border-radius);
+    border: 1px solid var(--color-border);
+    
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+    
+    overflow-wrap: break-word;
+    word-wrap: break-word;
+    hyphens: auto;
+  }
 
-.highlight-desc {
-  font-size: 0.875rem;
-  color: var(--color-muted-foreground);
-  line-height: 1.5;
-  margin-bottom: 0;
-}
+  /* Multi-column layout for home-tmp content */
+  home-tmp ul {
+    column-count: 3;
+    column-gap: var(--space);
+    column-rule: 1px solid var(--color-gray-dark);
+    padding: 0;
+  }
 
-/* Smooth transitions */
-* {
-  transition: background-color 0.3s ease, color 0.3s ease, border-color 0.3s ease;
-}
+  /* Prevent breaking items across columns */
+  home-tmp li {
+    break-inside: avoid;
+    page-break-inside: avoid;
+    margin-bottom: var(--space-small);
+  }
+
+  /* Tablet layout: 2 columns */
+  @media (max-width: 800px) {
+    home-tmp ul {
+      column-count: 2;
+    }
+  }
+
+  /* Mobile layout: 1 column */
+  @media (max-width: 640px) {
+    home-tmp ul {
+      column-count: 1;
+      column-rule: none; /* Remove vertical line when there's only one column */
+    }
+  }
+
+  footer {
+    padding: var(--space) 0;
+    text-align: center;
+  }
 </style>
 
 </head>
-
 <body>
-  <div class="container">
-    <header class="header">
-      <div class="header-content">
-        <a href="/" class="brand">
-          <div class="logo">
-            <img src="oinam-logo.svg" alt="Oinam Start" width="40" height="40">
-          </div>
-          <div class="brand-text">
-            <h1 class="title">Start</h1>
-          </div>
-        </a>
-        <div class="header-actions">
-          <div class="search-container">
-            <input 
-            type="text" 
-            id="search-input" 
-            placeholder="Search ... (⌘K)"
-            class="search-input">
-            <kbd class="search-shortcut">⌘ K</kbd>
-          </div>
-          <div class="theme-toggle">
-            <button id="theme-toggle" class="theme-button" title="Toggle light/dark mode (right-click for color themes)">
-              <svg class="theme-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                <circle cx="12" cy="12" r="9"/>
-                <path d="M12 3v18M12 3a9 9 0 0 1 0 18" fill="currentColor" stroke="none"/>
-              </svg>
-            </button>
-          </div>
-        </div>
-      </div>
-    </header>
+<main>
 
-    <div class="main-wrapper">
-      <main class="main">
-        <div class="main-header">
-          <div class="breadcrumb">
-            <!-- Category navigation will be populated here -->
-          </div>
-          <div class="view-toggle">
-            <button id="view-toggle" class="view-button" title="Toggle view">
-              <svg class="view-icon grid-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                <rect x="3" y="3" width="7" height="7"/>
-                <rect x="14" y="3" width="7" height="7"/>
-                <rect x="14" y="14" width="7" height="7"/>
-                <rect x="3" y="14" width="7" height="7"/>
-              </svg>
-              <svg class="view-icon list-icon" style="display: none;" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                <line x1="8" y1="6" x2="21" y2="6"/>
-                <line x1="8" y1="12" x2="21" y2="12"/>
-                <line x1="8" y1="18" x2="21" y2="18"/>
-                <line x1="3" y1="6" x2="3.01" y2="6"/>
-                <line x1="3" y1="12" x2="3.01" y2="12"/>
-                <line x1="3" y1="18" x2="3.01" y2="18"/>
-              </svg>
-            </button>
-          </div>
-        </div>
+  <home-container>
+    <section class="top-row">
+      <home-favorites><content-md data-src="1-favorites.md"></content-md></home-favorites>
+      <home-main><content-md data-src="2-main.md"></content-md></home-main>
+      <home-sidebar><content-md data-src="3-sidebar.md"></content-md></home-sidebar>
+    </section>
+    <home-tmp><content-md data-src="4-tmp.md"></content-md></home-tmp>
+  </home-container>
 
-        <div class="directory-grid" id="directory-grid">
-          <!-- Listing items will be populated here -->
-        </div>
+</main>
 
-        <div class="empty-state" id="empty-state" style="display: none;">
-          <h3>No items found</h3>
-          <p>Try adjusting your search terms or browse different categories.</p>
-        </div>
-      </main>
-
-      <aside class="sidebar">
-        <div class="sidebar-section">
-          <h3 class="sidebar-title">
-            Primary
-          </h3>
-          <div class="highlights-list" id="highlights-list">
-            <!-- Highlights will be populated here from sidebar.md -->
-          </div>
-
-          <footer>
-            <p>
-              <small>
-                By
-                <a href="https://brajeshwar.com/" target="_blank">Brajeshwar</a>
-                <a href="https://oinam.com/" target="_blank">Oinam</a>
-              </small>
-            </p>
-          </footer>
-        </div>
-      </aside>
-    </div>
-  </div>
+<footer>
+  <p>
+    <small>
+      <a href="https://start.oinam.com">Start</a> by <a href="https://oinam.com">Oinam</a>. <a href="https://github.com/oinam/start">Source</a>.
+    </small>
+  </p>
+</footer>
 
 <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
 
 <script>
-// Sidebar management
-class SidebarManager {
-  constructor() {
-    this.highlights = [];
-    this.loadSidebarContent();
-  }
-
-  async loadSidebarContent() {
-    try {
-      const response = await fetch('sidebar.md');
-      const markdownText = await response.text();
-      this.highlights = this.parseSidebarMarkdown(markdownText);
-      this.renderHighlights();
-    } catch (error) {
-      console.error('Error loading sidebar content:', error);
+  // Define the content-md custom element
+  class ContentMd extends HTMLElement {
+    constructor() {
+      super();
     }
-  }
 
-  parseSidebarMarkdown(markdownText) {
-    const items = [];
-    
-    // Initialize marked parser
-    if (!window.marked) {
-      console.error('marked not loaded');
-      return [];
-    }
-    
-    // Parse markdown to tokens
-    const tokens = marked.lexer(markdownText);
-    
-    // Process list tokens
-    for (let i = 0; i < tokens.length; i++) {
-      const token = tokens[i];
-      
-      if (token.type === 'list') {
-        // Process each list item
-        for (let j = 0; j < token.items.length; j++) {
-          const listItem = token.items[j];
-          const currentItem = {
-            title: '',
-            url: '',
-            desc: ''
-          };
-          
-          // Get the main text (title) from the first text token
-          if (listItem.tokens && listItem.tokens.length > 0) {
-            const firstToken = listItem.tokens[0];
-            if (firstToken.type === 'text') {
-              currentItem.title = firstToken.text.trim();
-            }
-          }
-          
-          // Process nested list for metadata
-          for (let k = 0; k < listItem.tokens.length; k++) {
-            const subToken = listItem.tokens[k];
-            
-            if (subToken.type === 'list' && subToken.items) {
-              for (let l = 0; l < subToken.items.length; l++) {
-                const metaItem = subToken.items[l];
-                if (metaItem.tokens && metaItem.tokens.length > 0) {
-                  const metaText = metaItem.tokens[0].text || '';
-                  
-                  if (metaText.startsWith('url:')) {
-                    currentItem.url = metaText.replace('url:', '').trim();
-                  } else if (metaText.startsWith('desc:')) {
-                    currentItem.desc = metaText.replace('desc:', '').trim();
-                  }
-                }
-              }
-            }
-          }
-          
-          if (this.isValidHighlight(currentItem)) {
-            items.push(currentItem);
-          }
+    async connectedCallback() {
+      const src = this.getAttribute('data-src');
+      if (!src) {
+        this.innerHTML = '<p>Error: No source file specified</p>';
+        return;
+      }
+
+      try {
+        const response = await fetch(src);
+        if (!response.ok) {
+          throw new Error(`Failed to load ${src}: ${response.status} ${response.statusText}`);
         }
+        
+        const markdown = await response.text();
+        this.innerHTML = marked.parse(markdown);
+      } catch (error) {
+        console.error(`Error loading markdown file: ${error}`);
+        this.innerHTML = `<p>Error loading ${src}: ${error.message}</p>`;
       }
     }
-    
-    return items;
   }
 
-  isValidHighlight(item) {
-    return item.title && item.url && item.desc;
-  }
+  // Register the custom element
+  customElements.define('content-md', ContentMd);
 
-  renderHighlights() {
-    const highlightsList = document.getElementById('highlights-list');
-    if (!highlightsList) return;
-    
-    highlightsList.innerHTML = this.highlights.map(item => this.createHighlightHTML(item)).join('');
-    
-    // Add click handlers
-    highlightsList.querySelectorAll('.highlight-item').forEach(item => {
-      item.addEventListener('click', (e) => {
-        e.preventDefault();
-        const url = e.currentTarget.getAttribute('data-url');
-        if (url) {
-          window.open(url, '_blank', 'noopener,noreferrer');
-        }
-      });
-    });
-  }
-
-  createHighlightHTML(item) {
-    return `
-      <a href="${item.url}" target="_blank" rel="noopener noreferrer" class="highlight-item" data-url="${item.url}">
-        <h4 class="highlight-title">${this.escapeHtml(item.title)}</h4>
-        <p class="highlight-desc">${this.escapeHtml(item.desc)}</p>
-      </a>
-    `;
-  }
-
-  escapeHtml(text) {
-    const div = document.createElement('div');
-    div.textContent = text;
-    return div.innerHTML;
-  }
-}
-
-// View management
-class ViewManager {
-  constructor() {
-    this.currentView = localStorage.getItem('view') || 'grid';
-    this.init();
-  }
-
-  init() {
-    this.applyView();
-    this.updateViewIcon();
-  }
-
-  applyView() {
-    const grid = document.getElementById('directory-grid');
-    if (this.currentView === 'list') {
-      grid.classList.add('list-view');
-    } else {
-      grid.classList.remove('list-view');
-    }
-  }
-
-  toggle() {
-    this.currentView = this.currentView === 'grid' ? 'list' : 'grid';
-    localStorage.setItem('view', this.currentView);
-    this.applyView();
-    this.updateViewIcon();
-  }
-
-  updateViewIcon() {
-    const gridIcon = document.querySelector('.grid-icon');
-    const listIcon = document.querySelector('.list-icon');
-    
-    if (this.currentView === 'grid') {
-      gridIcon.style.display = 'block';
-      listIcon.style.display = 'none';
-    } else {
-      gridIcon.style.display = 'none';
-      listIcon.style.display = 'block';
-    }
-  }
-}
-
-// Theme management
-class ThemeManager {
-  constructor() {
-    this.themes = ['auto', 'light', 'dark'];
-    this.colorThemes = ['monochrome', 'nord'];
-    this.currentThemeIndex = 0;
-    this.currentColorTheme = 'monochrome';
-    this.init();
-  }
-
-  init() {
-    // Load saved theme or default to auto
-    const savedTheme = localStorage.getItem('theme') || 'auto';
-    this.currentThemeIndex = this.themes.indexOf(savedTheme);
-    if (this.currentThemeIndex === -1) this.currentThemeIndex = 0;
-    
-    // Load saved color theme or default to monochrome
-    this.currentColorTheme = localStorage.getItem('colorTheme') || 'monochrome';
-    
-    this.applyTheme();
-    this.updateThemeIcon();
-  }
-
-  applyTheme() {
-    const theme = this.themes[this.currentThemeIndex];
-    const root = document.documentElement;
-    
-    // Set color theme attribute
-    root.setAttribute('data-color-theme', this.currentColorTheme);
-    
-    // Set light/dark mode
-    if (theme === 'auto') {
-      // Use system preference
-      const prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
-      root.setAttribute('data-theme', prefersDark ? 'dark' : 'light');
-    } else {
-      root.setAttribute('data-theme', theme);
-    }
-    
-    localStorage.setItem('theme', theme);
-    localStorage.setItem('colorTheme', this.currentColorTheme);
-  }
-
-  toggle() {
-    this.currentThemeIndex = (this.currentThemeIndex + 1) % this.themes.length;
-    this.applyTheme();
-    this.updateThemeIcon();
-  }
-
-  switchColorTheme() {
-    const currentIndex = this.colorThemes.indexOf(this.currentColorTheme);
-    const nextIndex = (currentIndex + 1) % this.colorThemes.length;
-    this.currentColorTheme = this.colorThemes[nextIndex];
-    this.applyTheme();
-  }
-
-  updateThemeIcon() {
-    const themeIcon = document.querySelector('.theme-icon');
-    const theme = this.themes[this.currentThemeIndex];
-    
-    const svgIcons = {
-      auto: '<svg class="theme-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="9"/><path d="M12 3v18M12 3a9 9 0 0 1 0 18" fill="currentColor" stroke="none"/></svg>',
-      light: '<svg class="theme-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="5"/><path d="M12 1v2M12 21v2M4.22 4.22l1.42 1.42M18.36 18.36l1.42 1.42M1 12h2M21 12h2M4.22 19.78l1.42-1.42M18.36 5.64l1.42-1.42"/></svg>',
-      dark: '<svg class="theme-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>'
-    };
-    
-    themeIcon.outerHTML = svgIcons[theme];
-  }
-}
-
-// Listing data structure
-class ListingManager {
-  constructor() {
-    this.currentCategory = 'all';
-    this.data = [];
-    this.filteredData = [];
-    this.markdownFiles = [
-      'relations.md',
-      'administration.md',
-      'ai-assistants.md',
-      'build.md',
-      'research.md',
-      'tools.md',
-      'lab.md',
-      'references.md'
-    ];
-    this.loadMarkdownData();
-  }
-
-  async loadMarkdownData() {
-    try {
-      const allData = [];
-      
-      // Load all markdown files concurrently
-      const promises = this.markdownFiles.map(async (filename) => {
-        try {
-          const response = await fetch(filename);
-          const markdownText = await response.text();
-          return this.parseMarkdown(markdownText);
-        } catch (error) {
-          console.warn(`Error loading ${filename}:`, error);
-          return [];
-        }
-      });
-      
-      const results = await Promise.all(promises);
-      
-      // Combine all results into a single array
-      for (const items of results) {
-        allData.push(...items);
-      }
-      
-      this.data = allData;
-      this.filteredData = this.data;
-      return true;
-    } catch (error) {
-      console.error('Error loading markdown content:', error);
-      this.data = [];
-      this.filteredData = [];
-      return false;
-    }
-  }
-
-  parseMarkdown(markdownText) {
-    const items = [];
-    
-    // Initialize marked parser
-    if (!window.marked) {
-      console.error('marked not loaded');
-      return [];
-    }
-    
-    // Parse markdown to tokens
-    const tokens = marked.lexer(markdownText);
-    
-    let currentSection = null;
-    
-    for (let i = 0; i < tokens.length; i++) {
-      const token = tokens[i];
-      
-      // Check for section headings
-      if (token.type === 'heading' && token.depth === 1) {
-        currentSection = token.text;
-      }
-      
-      // Process list tokens
-      if (token.type === 'list' && currentSection) {
-        // Process each list item
-        for (let j = 0; j < token.items.length; j++) {
-          const listItem = token.items[j];
-          const currentItem = {
-            category: currentSection,
-            type: this.mapCategoryToType(currentSection),
-            tags: [],
-            title: '',
-            url: '',
-            created: '',
-            description: ''
-          };
-          
-          // Get the main text (title) from the first text token
-          if (listItem.tokens && listItem.tokens.length > 0) {
-            const firstToken = listItem.tokens[0];
-            if (firstToken.type === 'text') {
-              currentItem.title = firstToken.text.trim();
-            }
-          }
-          
-          // Process nested list for metadata
-          for (let k = 0; k < listItem.tokens.length; k++) {
-            const subToken = listItem.tokens[k];
-            
-            if (subToken.type === 'list' && subToken.items) {
-              for (let l = 0; l < subToken.items.length; l++) {
-                const metaItem = subToken.items[l];
-                if (metaItem.tokens && metaItem.tokens.length > 0) {
-                  const metaText = metaItem.tokens[0].text || '';
-                  
-                  if (metaText.startsWith('url:')) {
-                    currentItem.url = metaText.replace('url:', '').trim();
-                  } else if (metaText.startsWith('tags:')) {
-                    const tagsString = metaText.replace('tags:', '').trim();
-                    currentItem.tags = tagsString.split(',').map(tag => tag.trim());
-                  } else if (metaText.startsWith('date:')) {
-                    currentItem.created = metaText.replace('date:', '').trim();
-                  } else if (metaText.startsWith('desc:')) {
-                    currentItem.description = metaText.replace('desc:', '').trim();
-                  }
-                }
-              }
-            }
-          }
-          
-          if (this.isValidItem(currentItem)) {
-            items.push(currentItem);
-          }
-        }
-      }
-    }
-    
-    return items;
-  }
-
-  isValidItem(item) {
-    return item.title && item.url && item.category && item.description;
-  }
-
-  mapCategoryToType(category) {
-    // Remove hard-coded mapping, just return the category name in lowercase
-    return category.toLowerCase();
-  }
-
-  getCurrentItems() {
-    if (this.currentCategory === 'all') {
-      return this.data;
-    }
-    return this.data.filter(item => item.category === this.currentCategory);
-  }
-
-  navigateToCategory(category) {
-    this.currentCategory = category;
-    this.filteredData = this.getCurrentItems();
-    this.updateURL();
-    return true;
-  }
-
-  updateURL() {
-    if (this.currentCategory !== 'all') {
-      window.history.pushState({}, '', `/#${this.currentCategory.toLowerCase()}`);
-    } else {
-      window.history.pushState({}, '', '/');
-    }
-  }
-
-  initializeFromURL() {
-    const hash = window.location.hash;
-    if (hash.startsWith('#')) {
-      const category = hash.slice(1);
-      const categories = this.getCategories();
-      const matchedCategory = categories.find(c => c.toLowerCase() === category);
-      if (matchedCategory) {
-        this.navigateToCategory(matchedCategory);
-        return true;
-      }
-    }
-    return false;
-  }
-
-  search(query) {
-    if (!query.trim()) {
-      this.filteredData = this.getCurrentItems();
-      return this.filteredData;
-    }
-
-    const searchTerm = query.toLowerCase();
-    this.filteredData = this.getCurrentItems().filter(item =>
-      item.title.toLowerCase().includes(searchTerm) ||
-      item.description.toLowerCase().includes(searchTerm) ||
-      (item.tags && item.tags.some(tag => tag.toLowerCase().includes(searchTerm)))
-    );
-    
-    return this.filteredData;
-  }
-
-  getFilteredItems() {
-    return this.filteredData;
-  }
-
-  getCategories() {
-    const categories = [...new Set(this.data.map(item => item.category))];
-    return ['all', ...categories];
-  }
-}
-
-// UI Manager
-class UIManager {
-  constructor(listingManager) {
-    this.listingManager = listingManager;
-    this.searchInput = document.getElementById('search-input');
-    this.listingGrid = document.getElementById('directory-grid');
-    this.emptyState = document.getElementById('empty-state');
-    this.categoryNav = document.querySelector('.breadcrumb');
-    
-    this.init();
-    this.updateSidebarStats();
-  }
-
-  init() {
-    this.listingManager.initializeFromURL();
-    this.render();
-    this.setupEventListeners();
-    this.setupUrlHandling();
-  }
-
-  setupEventListeners() {
-    // Search functionality
-    this.searchInput.addEventListener('input', (e) => {
-      const query = e.target.value;
-      this.listingManager.search(query);
-      this.render();
-    });
-
-    // Clear search when navigating
-    this.searchInput.addEventListener('keydown', (e) => {
-      if (e.key === 'Escape') {
-        this.searchInput.value = '';
-        this.listingManager.search('');
-        this.render();
-        this.searchInput.blur();
-      }
-    });
-
-    // Global keyboard shortcut for search
-    // Keyboard shortcuts
-    document.addEventListener('keydown', (e) => {
-      if ((e.metaKey || e.ctrlKey) && e.key === 'k') {
-        e.preventDefault();
-        this.searchInput.focus();
-        this.searchInput.select();
-      }
-    });
-
-    this.updateShortcutDisplay();
-  }
-
-  setupUrlHandling() {
-    window.addEventListener('popstate', () => {
-      this.listingManager.initializeFromURL();
-      this.render();
-    });
-  }
-
-  updateShortcutDisplay() {
-    const shortcutElement = document.querySelector('.search-shortcut');
-    const placeholder = document.querySelector('#search-input');
-    
-    if (shortcutElement && placeholder) {
-      const isMac = navigator.platform.toUpperCase().indexOf('MAC') >= 0;
-      const shortcutText = isMac ? '⌘ K' : 'Ctrl + K';
-      const placeholderText = isMac ? 
-        'Search ... (⌘ K)' : 
-        'Search ... (Ctrl + K)';
-      
-      shortcutElement.textContent = shortcutText;
-      placeholder.placeholder = placeholderText;
-    }
-  }
-
-  render() {
-    this.renderCategoryNav();
-    this.renderListingItems();
-    
-    // Apply current view mode
-    if (window.viewManager) {
-      window.viewManager.applyView();
-    }
-  }
-
-  renderCategoryNav() {
-    const categories = this.listingManager.getCategories();
-    
-    this.categoryNav.innerHTML = categories.map(category => {
-      const isActive = category === this.listingManager.currentCategory;
-      const displayName = category === 'all' ? 'All' : category.charAt(0).toUpperCase() + category.slice(1);
-      
-      return `
-        <button class="breadcrumb-item ${isActive ? 'active' : ''}" data-category="${category}">
-          ${displayName}
-        </button>
-      `;
-    }).join('');
-
-    // Add click handlers for category navigation
-    this.categoryNav.querySelectorAll('.breadcrumb-item').forEach(item => {
-      item.addEventListener('click', (e) => {
-        const category = e.currentTarget.getAttribute('data-category');
-        this.searchInput.value = '';
-        if (this.listingManager.navigateToCategory(category)) {
-          this.render();
-        }
-      });
-    });
-  }
-
-  renderListingItems() {
-    const items = this.listingManager.getFilteredItems();
-    
-    if (items.length === 0) {
-      this.listingGrid.style.display = 'none';
-      this.emptyState.style.display = 'flex';
-      return;
-    }
-
-    this.listingGrid.style.display = 'grid';
-    this.emptyState.style.display = 'none';
-
-    this.listingGrid.innerHTML = items.map(item => this.createItemHTML(item)).join('');
-
-    // Add click handlers for listing items
-    this.listingGrid.querySelectorAll('.listing-item').forEach(item => {
-      item.addEventListener('click', (e) => {
-        e.preventDefault();
-        const url = e.currentTarget.getAttribute('data-url');
-        if (url) {
-          window.open(url, '_blank', 'noopener,noreferrer');
-        }
-      });
-    });
-  }
-
-  createItemHTML(item) {
-    // Use the ViewManager's current view state if available
-    const viewMode = window.viewManager ? window.viewManager.currentView : (localStorage.getItem('view') || 'grid');
-    
-    // Create tags HTML if tags exist
-    const tagsHTML = item.tags && item.tags.length > 0 
-      ? `<div class="item-tags">${item.tags.map(tag => `<span class="tag">${this.escapeHtml(tag)}</span>`).join('')}</div>`
-      : '';
-    
-    if (viewMode === 'list') {
-      return `
-        <a href="${item.url}" target="_blank" rel="noopener noreferrer" class="listing-item" data-url="${item.url}">
-          <div class="item-content">
-            <h3 class="item-title">${this.escapeHtml(item.title)}</h3>
-            <p class="item-description">${this.escapeHtml(item.description)}</p>
-            ${tagsHTML}
-            <div class="item-date">Added: ${item.created}</div>
-          </div>
-        </a>
-      `;
-    }
-    
-    return `
-      <a href="${item.url}" target="_blank" rel="noopener noreferrer" class="listing-item" data-url="${item.url}">
-        <div class="item-content">
-          <h3 class="item-title">${this.escapeHtml(item.title)}</h3>
-          <p class="item-description">${this.escapeHtml(item.description)}</p>
-          ${tagsHTML}
-          <div class="item-date">Added: ${item.created}</div>
-        </div>
-      </a>
-    `;
-  }
-
-  updateSidebarStats() {
-    // This method can be used to update sidebar statistics if needed
-    // Currently just a placeholder to prevent errors
-  }
-
-  escapeHtml(text) {
-    const div = document.createElement('div');
-    div.textContent = text;
-    return div.innerHTML;
-  }
-}
-
-// Initialize the application
-document.addEventListener('DOMContentLoaded', () => {
-  // Initialize sidebar manager
-  const sidebarManager = new SidebarManager();
-  
-  // Initialize view manager
-  const viewManager = new ViewManager();
-  window.viewManager = viewManager;
-  
-  // View toggle button
-  const viewToggle = document.getElementById('view-toggle');
-  viewToggle.addEventListener('click', () => {
-    viewManager.toggle();
-    // Re-render the items with the new view
-    if (window.uiManager) {
-      window.uiManager.render();
-    }
+  // Initialize all content-md elements
+  document.addEventListener('DOMContentLoaded', () => {
+    console.log('DOM loaded, initializing markdown content...');
   });
-
-  // Initialize theme manager
-  const themeManager = new ThemeManager();
-  
-  // Theme toggle button
-  const themeToggle = document.getElementById('theme-toggle');
-  
-  // Left click: toggle light/dark/auto mode
-  themeToggle.addEventListener('click', () => {
-    themeManager.toggle();
-  });
-
-  // Right click: switch color theme
-  themeToggle.addEventListener('contextmenu', (e) => {
-    e.preventDefault();
-    themeManager.switchColorTheme();
-  });
-
-  // Listen for system theme changes
-  window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change', () => {
-    if (themeManager.themes[themeManager.currentThemeIndex] === 'auto') {
-      themeManager.applyTheme();
-    }
-  });
-
-  // Initialize listing manager and UI
-  const listingManager = new ListingManager();
-  
-  // Wait for data to load before initializing UI
-  listingManager.loadMarkdownData().then(() => {
-    const uiManager = new UIManager(listingManager);
-    
-    // Make uiManager globally available
-    window.uiManager = uiManager;
-  });
-});
 </script>
 
 </body>
