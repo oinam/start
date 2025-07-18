@@ -1,9 +1,12 @@
-## CRM
+## References
 
-- [Attio](https://app.attio.com) is the AI-native CRM
-- [Bridge](https://get.brdg.app/) streamline introductions
-- [Connect the Dots](https://app.ctd.ai/)
-- [Distill](https://distill.fyi) detailed, accurate, and easy-to-read profiles on the people and companies you'd like to learn about
-- [Happentence](https://happenstance.ai/) Find people in your networks.
-- [Clay](https://app.clay.com/)
-- [OpenVC](https://www.openvc.app/dashboard)
+- [Character Entities for HTML, CSS and Javascript](https://oinam.github.io/entities/)
+- [OpenAlternative](https://openalternative.co) - A curated collection of the best open source alternatives to everyday SaaS products. Save money with reliable tools hand-picked for you.
+- [AlternativeOSS](https://alternativeoss.com) - Find and compare the best open source alternatives to popular software tools. Get weekly recommendations in your inbox.
+- [Buy Once Software](https://buyoncesoftware.com) - Discover software you can buy once and own forever--no recurring charges, just tools that work for you, for life.
+- [European Alternative](https://european-alternatives.eu) - We help you find European alternatives for digital service and products, like cloud services and SaaS products.
+- [GenAI Image Showdown](https://genai-showdown.specr.net) - A comparison of various SOTA generative image models on specific prompts and challenges with a strong emphasis placed on adherence.
+- [LLM Leaderboard](https://llm-stats.com) - Analyze and compare AI models across benchmarks, pricing, and capabilities.
+- [Prompt Library](https://www.promptly.fyi/library) - Explore our curated collection of AI prompts to enhance your interactions and boost productivity.
+- [Prompts Chat](https://prompts.chat) - A curated collection of effective prompts for ChatGPT and other AI assistants.
+- [The Book of Secret Knowledge](https://github.com/trimstray/the-book-of-secret-knowledge) - A collection of inspiring lists, manuals, cheatsheets, blogs, hacks, one-liners, cli/web tools, and more.

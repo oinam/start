@@ -1,37 +1,46 @@
-## ./tmp
+## ./tmp (To Test & Process)
 
-- [Aligneer](https://app.alignerr.com) is a data labeler, RLHF platform.
+- [Imagine AI Art Generator](https://www.imagine.art)
+- [Ideogram](https://ideogram.ai/) Generate Pictures
+- [Leonardo](https://leonardo.ai)
+- [DreamCut](https://dreamcut.ai/) is an AI video editor and screen recorder that works right from your browser.
+- [OneTake](https://www.onetake.ai) turns talking videos into professional presentations.
+- [Pollo](https://pollo.ai) is a One-Stop AI Image & Video Creation Platform.
+- https://www.skyreels.ai
+- https://videogen.io
+- https://www.vidnoz.com
+- [Vimmerse](https://www.vimmerse.net) Turn your static images, product descriptions, and story ideas, into dynamic engaging videos
 - [Affogato](https://affogato.ai) - AI Characters that Talk, Pose, and Sell for you.
-- [AlternativeOSS](https://alternativeoss.com) - Find and compare the best open source alternatives to popular software tools. Get weekly recommendations in your inbox.
 - [Anything LLM](https://anythingllm.com) - Open Source all-in-one AI application.
 - [Braintrust](https://www.braintrust.dev) - Braintrust is the end-to-end platform for building AI apps.
-- [Buy Once Software](https://buyoncesoftware.com) - Discover software you can buy once and own forever--no recurring charges, just tools that work for you, for life.
-- [Colorify Rocks](https://colorify.rocks) - Create stunning color palettes instantly with AI.
-- [Colourise](https://colourise.com) - Colorize Photo Online Free with AI.
-- [European Alternative](https://european-alternatives.eu) - We help you find European alternatives for digital service and products, like cloud services and SaaS products.
-- [Favicon Generator](https://realfavicongenerator.net) - Favicon generator.
-- [GenAI Image Showdown](https://genai-showdown.specr.net) - A comparison of various SOTA generative image models on specific prompts and challenges with a strong emphasis placed on adherence.
-- [Hyperaide](https://www.hyperaide.com) - AI-powered productivity assistant that streamlines task management, eliminates friction, and helps you accomplish more with less effort.
-- [Idea Browser](https://www.ideabrowser.com) - Get ideas for profitable startups, trending keywords, and go-to-market tactics, powered by data.
 - [Index](https://index.inc) - The product-native companion app for Linear. Collect ideas, manage feedback, and build roadmaps.
-- [IT Tools](https://it-tools.tech) - IT Tools and Utilities
-- [JSON Crack](https://jsoncrack.com) - The best online JSON viewer to visualize, format and explore.
-- [LLM Leaderboard](https://llm-stats.com) - Analyze and compare AI models across benchmarks, pricing, and capabilities.
-- [Magic Path](https://www.magicpath.ai) - AI assisted Design
 - [Msty](https://msty.app) - Uses local and online AI models. $199 Lifetime License.
 - [n8n](https://n8n.io) - Flexible AI workflow automation.
-- [Napkin](https://www.napkin.ai) - Napkin turns your text into visuals so sharing your ideas is quick and effective.
-- [OnLook](https://onlook.com) - Onlook lets you visually edit your React websites or webapps and write your changes back to code in real-time
-- [OpenAlternative](https://openalternative.co) - A curated collection of the best open source alternatives to everyday SaaS products. Save money with reliable tools hand-picked for you.
 - [oTranscribe](https://otranscribe.com) - A web app to take the pain out of transcribing recorded interviews.
 - [PowerDrill](https://powerdrill.ai) - AI for serious data work.
-- [Prompt Library](https://www.promptly.fyi/library) - Explore our curated collection of AI prompts to enhance your interactions and boost productivity.
-- [Prompts Chat](https://prompts.chat) - A curated collection of effective prompts for ChatGPT and other AI assistants.
 - [SpeakMyVoice](https://speakmyvoice.com) - With SpeakMyVoice, you're always part of the conversation.
 - [Suna](https://www.suna.so) - Open Source Generalist AI Agent
-- [TableConvert](https://tableconvert.com/html-to-markdown) - Convert HTML Table to Markdown Table Online.
-- [The Book of Secret Knowledge](https://github.com/trimstray/the-book-of-secret-knowledge) - A collection of inspiring lists, manuals, cheatsheets, blogs, hacks, one-liners, cli/web tools, and more.
 - [TLDraw Computer](https://computer.tldraw.com) - An infinite canvas for natural language computing
 - [Web-Check](https://web-check.as93.net/) - All-in-one OSINT tool
 - [Your Life in Weeks](https://lifeweeks.app) - Create a map of your life where each week is a little box.
-- [Yupp](https://yupp.ai) - Check out the best answers from all the latest AIs.
+- [Visual Electric](https://visualelectric.com) Turn ideas into images, designs, and videos.
+- https://github.com/camel-ai/owl
+- https://github.com/johnbean393/Sidekick
+- https://superwhisper.com
+- https://www.exec.com/sales-comp
+- https://www.levels.com
+- https://howie.ai
+- https://www.aomni.com
+- https://www.sir.studio/channelspro
+- https://www.resemble.ai
+- https://mynucleus.com
+- https://societies.io
+- https://stacktape.com
+- https://ente.io/auth/
+- https://www.sesame.com
+- https://www.genspark.ai
+- https://flux-kontext-dev.com
+- https://dust.tt The platform to build AI agents in minutes, connected to your company knowledge and tools,
+powered by the best AI models.
+- https://skydata.app
+- https://listenlabs.ai Listen is an end-to-end research platform. Our customers replace surveys, focus groups, and in-depth interviews with Listen’s AI-moderated interviews.
