@@ -1,7 +1,5 @@
 ## References
 
-- [Cloudflare Radar](https://radar.cloudflare.com) provides real-time insights and trends about global Internet traffic, security threats, and technology adoption.
-- [Cloudflare Speed](https://speed.cloudflare.com) allows users to accurately measure the performance of their Internet connection using Cloudflare’s global edge network.
 - [Character Entities for HTML, CSS and Javascript](https://oinam.github.io/entities/)
 - [OpenAlternative](https://openalternative.co) - A curated collection of the best open source alternatives to everyday SaaS products. Save money with reliable tools hand-picked for you.
 - [AlternativeOSS](https://alternativeoss.com) - Find and compare the best open source alternatives to popular software tools. Get weekly recommendations in your inbox.

@@ -7,35 +7,40 @@
 
 <style>
   :root {
-    --body-width: 98%;
+    --body-width: 96%;
     --body-width-max: 1600px;
     
     --space: 1rem;
-    --space-small: 0.5rem;
+    --space-small: 0.6rem;
     
     --font-family: system-ui, -apple-system, 'Segoe UI', 'Roboto', Ubuntu, Cantarell, 'Noto Sans', 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji', sans-serif;
-    --line-height: 1.6;
+    --line-height: 1.618034; /* Golden Ratio */
     --heading-size: 1.25rem;
     --heading-weight: 600;
-    --text-size: 1.1rem;
+    --text-size: 1rem;
     
     /* Tailwind color, https://tailwindcss.com/docs/colors */
-    --color-gray-light: #f8fafc;
-    --color-gray: #f5f5f5;
-    --color-gray-dark: #d4d4d4;
-    --color-gray-darker: #737373;
-    --color-gray-darkest: #404040;
+    --color-primary: oklch(54.6% 0.245 262.881); /* Blue-700 */
+    --color-accent: oklch(51.8% 0.253 323.949); /* Fuchsia-700 */
     
-    --color-border: #e2e8f0;
+    --color-gray-light:   oklch(98.4% 0.003 247.858); /* Slate-50 */
+    --color-gray:         oklch(97% 0 0); /* Neutal-100 */
+    --color-gray-dark:    oklch(87% 0 0); /* Neutal-300 */
+    --color-gray-darker:  oklch(55.6% 0 0);  /* Neutal-500 */
+    --color-gray-darkest: oklch(26.9% 0 0); /* Neutal-800 */
     
-    --color-text: #262626;
-    --color-link: #3b82f6;
-    --color-link-hover: #1e40af;
+    --color-border: var(--color-gray-dark);
+    
+    --color-text: var(--color-gray-darkest);
+    --color-link: var(--color-primary);
+    --color-link-hover: var(--color-accent);
     
     --border-radius: 7px;
   }
 
-  * {
+  *,
+  ::before,
+  ::after {
     box-sizing: border-box;
   }
 
@@ -71,6 +76,16 @@
     border-bottom: 1px solid var(--color-gray-dark);
   }
 
+  a, a:visited {
+    color: var(--color-link);
+    text-decoration: none;
+  }
+
+  a:hover, a:active {
+    color: var(--color-link-hover);
+    text-decoration: underline;
+  }
+
   ul, ol {
     list-style: none;
     margin: var(--space) 0;
@@ -84,79 +99,71 @@
   }
 
   li:hover, li:active {
+    color: var(--color-gray-darker);
     background: var(--color-gray);
     border-left-color: var(--color-gray-darker);
     border-right-color: var(--color-gray-darker);
   }
 
-  a, a:visited {
-    color: var(--color-link);
-    text-decoration: none;
-  }
-
-  a:hover, a:active {
-    color: var(--color-link-hover);
-    text-decoration: underline;
-  }
-
   hr {
     margin: var(--space);
-    padding: 0;
+    background: none;
+    height: 0;
     border: 0 none;
     border-bottom: 1px solid var(--color-gray-dark);
   }
 
-  home-container {
+  main {
     display: flex;
     flex-direction: column;
     gap: var(--space);
   }
 
-  .top-row {
+  bookmark-primary {
     display: flex;
     flex-wrap: wrap;
     gap: var(--space);
   }
 
-  home-favorites,
-  home-main,
-  home-sidebar {
+  bookmark-favorites,
+  bookmark-main,
+  bookmark-sidebar {
     flex: 1;
     min-width: calc(33.333% - var(--space) * 2/3); /* Ensure equal width with gap consideration */
   }
 
-  home-tmp {
+  bookmark-tmp {
     width: 100%;
     margin-top: calc(2 * var(--space));
   }
 
   /* Tablet layout: 2 columns */
   @media (max-width: 800px) {
-    home-favorites,
-    home-main,
-    home-sidebar {
+    bookmark-favorites,
+    bookmark-main,
+    bookmark-sidebar {
       min-width: calc(50% - var(--space) / 2); /* Two columns on tablet */
     }
     
     /* Ensure the third item takes full width in the next row */
-    home-sidebar {
+    bookmark-sidebar {
       flex-basis: 100%;
     }
   }
 
   /* Mobile layout: 1 column */
   @media (max-width: 640px) {
-    home-favorites,
-    home-main,
-    home-sidebar {
+    bookmark-favorites,
+    bookmark-main,
+    bookmark-sidebar {
       min-width: 100%; /* Full width on mobile */
     }
   }
 
-  home-favorites,
-  home-main,
-  home-sidebar,
-  home-tmp {
+  bookmark-favorites,
+  bookmark-main,
+  bookmark-sidebar,
+  bookmark-tmp {
     padding: 0;
     
     background: var(--color-gray-light);
@@ -171,14 +178,14 @@
   }
 
   /* tmp columnar layout - process ’EM */
-  home-tmp ul {
+  bookmark-tmp ul {
     column-count: 3;
     column-gap: 0;
     column-rule: 1px solid var(--color-gray-dark);
     padding: 0;
   }
 
-  home-tmp li {
+  bookmark-tmp li {
     break-inside: avoid;
     page-break-inside: avoid;
     margin-bottom: var(--space-small);
@@ -186,52 +193,48 @@
 
   /* Tablet layout: 2 columns */
   @media (max-width: 800px) {
-    home-tmp ul {
+    bookmark-tmp ul {
       column-count: 2;
     }
   }
 
   /* Mobile layout: 1 column */
   @media (max-width: 640px) {
-    home-tmp ul {
+    bookmark-tmp ul {
       column-count: 1;
       column-rule: none; /* Remove vertical line when there's only one column */
     }
   }
 
   footer {
-    padding: var(--space) 0;
-    text-align: center;
+    margin: 0;
+    padding: var(--space);
   }
 </style>
 
 </head>
 <body>
 <main>
-
-  <home-container>
-    <section class="top-row">
-      <home-favorites><content-md data-src="1-favorites.md"></content-md></home-favorites>
-      <home-main><content-md data-src="2-main.md"></content-md></home-main>
-      <home-sidebar><content-md data-src="3-sidebar.md"></content-md></home-sidebar>
-    </section>
-    <home-tmp><content-md data-src="4-tmp.md"></content-md></home-tmp>
-  </home-container>
-
+  <bookmark-primary>
+    <bookmark-favorites><content-md data-src="1-favorites.md"></content-md></bookmark-favorites>
+    <bookmark-main><content-md data-src="2-main.md"></content-md></bookmark-main>
+    <bookmark-sidebar><content-md data-src="3-sidebar.md"></content-md></bookmark-sidebar>
+  </bookmark-primary>
+  <bookmark-tmp><content-md data-src="4-tmp.md"></content-md></bookmark-tmp>
 </main>
 
 <footer>
   <p>
     <small>
-      <a href="https://start.oinam.com">Start</a> by <a href="https://oinam.com">Oinam</a>. <a href="https://github.com/oinam/start">Source</a>.
+      <a href="https://start.oinam.com">Start</a> by <a href="https://oinam.com">Oinam</a>.
+      <a href="https://github.com/oinam/start">Source</a>.
     </small>
   </p>
 </footer>
 
 <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
-
 <script>
-  // Define the content-md custom element
+  // Define the "content-md" custom element
   class ContentMd extends HTMLElement {
     constructor() {
       super();
@@ -259,12 +262,12 @@
     }
   }
 
-  // Register the custom element
+  // Register the custom element for Markdown Replacement
   customElements.define('content-md', ContentMd);
 
-  // Initialize all content-md elements
+  // Initialize "content-md" elements
   document.addEventListener('DOMContentLoaded', () => {
-    console.log('DOM loaded, initializing markdown content...');
+    console.log('DOM loaded, initializing markdown content…');
   });
 </script>
 

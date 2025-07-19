@@ -1,7 +1,6 @@
 ## ./tmp (To Test & Process)
 
 - [Imagine AI Art Generator](https://www.imagine.art)
-- [Ideogram](https://ideogram.ai/) Generate Pictures
 - [Leonardo](https://leonardo.ai)
 - [DreamCut](https://dreamcut.ai/) is an AI video editor and screen recorder that works right from your browser.
 - [OneTake](https://www.onetake.ai) turns talking videos into professional presentations.
@@ -27,7 +26,7 @@
 - https://github.com/camel-ai/owl
 - https://github.com/johnbean393/Sidekick
 - https://superwhisper.com
-- https://www.exec.com/sales-comp
+- [Exec](https://www.exec.com) combines AI practice and expert coaching to deliver measurable skill development.
 - https://www.levels.com
 - https://howie.ai
 - https://www.aomni.com
@@ -37,8 +36,6 @@
 - https://societies.io
 - https://stacktape.com
 - https://www.sesame.com
-- https://www.genspark.ai
-- https://flux-kontext-dev.com
 - https://dust.tt The platform to build AI agents in minutes, connected to your company knowledge and tools,
 powered by the best AI models.
 - [Listen](https://listenlabs.ai) finds the right participants, conducts interviews, analyzes responses, and delivers actionable insights—with results in hours, not weeks.
