@@ -36,11 +36,9 @@
 - https://mynucleus.com
 - https://societies.io
 - https://stacktape.com
-- https://ente.io/auth/
 - https://www.sesame.com
 - https://www.genspark.ai
 - https://flux-kontext-dev.com
 - https://dust.tt The platform to build AI agents in minutes, connected to your company knowledge and tools,
 powered by the best AI models.
-- https://skydata.app
-- https://listenlabs.ai Listen is an end-to-end research platform. Our customers replace surveys, focus groups, and in-depth interviews with Listen’s AI-moderated interviews.
+- [Listen](https://listenlabs.ai) finds the right participants, conducts interviews, analyzes responses, and delivers actionable insights—with results in hours, not weeks.
