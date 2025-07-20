@@ -7,8 +7,13 @@
 
 ---
 
+- [Plane](https://plane.so/) Project Management
+
+---
+
 - [ChatGPT](https://chatgpt.com)
 - [Claude](https://claude.ai/)
+- [Replit](https://replit.com/~)
 - [Storm](https://storm.genie.stanford.edu) Knowledge curation system from Stanford.
 - [Aider](https://aider.chat) CLI Code Assistant
 - [Manus](https://manus.im/) General AI agent

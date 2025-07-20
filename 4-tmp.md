@@ -1,5 +1,6 @@
-## ./tmp (To Test & Process)
+## ./tmp (Read, Test, & Process)
 
+- [Synthetic Society](https://syntheticsociety.ai) is a QA and UX Testing, Powered by AI Simulated Users.
 - [Imagine AI Art Generator](https://www.imagine.art)
 - [Leonardo](https://leonardo.ai)
 - [DreamCut](https://dreamcut.ai/) is an AI video editor and screen recorder that works right from your browser.
