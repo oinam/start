@@ -1,5 +1,6 @@
 ## ./tmp (Read, Test, & Process)
 
+- [Cline](https://cline.bot) is an [open-source](https://github.com/cline/cline) collaborative AI partner that's extensible, and designed to amplify developer impact.
 - [Synthetic Society](https://syntheticsociety.ai) is a QA and UX Testing, Powered by AI Simulated Users.
 - [Imagine AI Art Generator](https://www.imagine.art)
 - [Leonardo](https://leonardo.ai)

@@ -12,8 +12,6 @@
 - [Connect the Dots](https://app.ctd.ai/) leverages relationship platform to build pipeline, deals, and drive referrals.
 - [Distill](https://distill.fyi) detailed, accurate, and easy-to-read profiles on the people and companies you'd like to learn about.
 - [Happentence](https://happenstance.ai/) Find people in your networks.
-- [Clay](https://app.clay.com/)
-- [OpenVC](https://www.openvc.app/dashboard) Fund-Raising platform to find investors, reach out, and get replies.
 
 ## Banks
 

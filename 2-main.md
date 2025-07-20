@@ -1,12 +1,17 @@
 ## Tools
 
 - [Void](https://void.oinam.com) is Nothing. Just Be Quiet.
+
+---
+
 - [Todoist](https://app.todoist.com/)
 - [WhatsApp Web](https://web.whatsapp.com/)
 - [Grammarly](https://app.grammarly.com/) weaning in-progress. Replacing it with [Language Tool](https://languagetool.org/editor/) after 2025-DEC.
 
 ---
 
+- [Clay](https://app.clay.com/)
+- [OpenVC](https://www.openvc.app/dashboard) Fund-Raising platform to find investors, reach out, and get replies.
 - [Plane](https://plane.so/) Project Management
 
 ---
