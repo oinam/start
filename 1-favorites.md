@@ -4,6 +4,7 @@
 - [Hacker News Source](https://github.com/brajeshwar/hackernews-source) by Brajeshwar.
 - [Arts & Letters Daily](https://www.aldaily.com) since 1998-SEP.
 - [Oinam’s Read](https://read.oinam.com) Archives by [Shiori](https://github.com/go-shiori/shiori).
+- [On Deck Community](https://community.joinodf.com)
 
 ## CRM
 
