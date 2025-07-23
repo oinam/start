@@ -6,7 +6,7 @@
 - [Oinam’s Read](https://read.oinam.com) Archives by [Shiori](https://github.com/go-shiori/shiori).
 - [On Deck Community](https://community.joinodf.com)
 
-## CRM
+## Lighthouse
 
 - [Attio](https://app.attio.com) is the AI-native CRM.
 - [Bridge](https://get.brdg.app/) streamline introductions.

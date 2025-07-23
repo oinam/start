@@ -19,6 +19,8 @@
 - [ChatGPT](https://chatgpt.com)
 - [Claude](https://claude.ai/)
 - [Replit](https://replit.com/~)
+- [Lovable](https://lovable.dev)
+- [Bolt](https://bolt.new/)
 - [Storm](https://storm.genie.stanford.edu) Knowledge curation system from Stanford.
 - [Aider](https://aider.chat) CLI Code Assistant
 - [Manus](https://manus.im/) General AI agent
@@ -29,6 +31,7 @@
 - [IT Tools](https://it-tools.tech) - IT Tools and Utilities
 - [JSON Crack](https://jsoncrack.com) - The best online JSON viewer to visualize, format and explore.
 - [TableConvert](https://tableconvert.com/html-to-markdown) - Convert HTML Table to Markdown Table Online.
+- [Archive](https://archive.today)
 
 ---
 
