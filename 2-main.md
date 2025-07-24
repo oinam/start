@@ -18,6 +18,7 @@
 
 - [ChatGPT](https://chatgpt.com)
 - [Claude](https://claude.ai/)
+- [v0](https://v0.dev)
 - [Replit](https://replit.com/~)
 - [Lovable](https://lovable.dev)
 - [Bolt](https://bolt.new/)
