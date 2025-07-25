@@ -4,6 +4,7 @@
 - [Buy Once Software](https://buyoncesoftware.com) - Discover software you can buy once and own forever--no recurring charges, just tools that work for you, for life.
 - [GenAI Image Showdown](https://genai-showdown.specr.net) - A comparison of various SOTA generative image models on specific prompts and challenges with a strong emphasis placed on adherence.
 - [LLM Leaderboard](https://llm-stats.com) - Analyze and compare AI models across benchmarks, pricing, and capabilities.
+- [Price Per Token](https://pricepertoken.com) - Up-to-date pricing information for major LLM APIs including OpenAI, Anthropic, Google, and more.
 - [Prompt Library](https://www.promptly.fyi/library) - Explore our curated collection of AI prompts to enhance your interactions and boost productivity.
 - [Prompts Chat](https://prompts.chat) - A curated collection of effective prompts for ChatGPT and other AI assistants.
 - [The Book of Secret Knowledge](https://github.com/trimstray/the-book-of-secret-knowledge) - A collection of inspiring lists, manuals, cheatsheets, blogs, hacks, one-liners, cli/web tools, and more.
