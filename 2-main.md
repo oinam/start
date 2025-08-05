@@ -16,6 +16,15 @@
 
 ---
 
+- [Aider](https://aider.chat)
+- [Anthropic Claude Code](https://github.com/anthropics/claude-code)
+- [Google Gemini CLI](https://github.com/google-gemini/gemini-cli)
+- [OpenAI Codex](https://github.com/openai/codex)
+- [Open Code](https://opencode.ai)
+- [Plandex](https://plandex.ai)
+
+---
+
 - [ChatGPT](https://chatgpt.com)
 - [Claude](https://claude.ai/)
 - [v0](https://v0.dev)
@@ -39,6 +48,10 @@
 - [Flux Kontext Dev](https://flux-kontext-dev.com) edits Images with Text Instructions.
 - [Genspark](https://www.genspark.ai) is an “AI Agentic Engine” designed to let AI agents search, deep research and various tasks, delivering answers and comprehensive results.
 - [Ideogram](https://ideogram.ai/) Generate Pictures
+
+---
+
+- [Graphite Editor](https://editor.graphite.rs)
 
 ---
 
