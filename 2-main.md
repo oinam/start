@@ -27,6 +27,7 @@
 
 - [ChatGPT](https://chatgpt.com)
 - [Claude](https://claude.ai/)
+- [ElevenLabs](https://elevenlabs.io)
 - [v0](https://v0.dev)
 - [Replit](https://replit.com/~)
 - [Lovable](https://lovable.dev)
