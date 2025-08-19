@@ -13,6 +13,7 @@
 
 - [Awesome](https://github.com/sindresorhus/awesome) lists about all kinds of interesting topics
 - [Generative AI](https://github.com/steven2358/awesome-generative-ai)
+- [n8n Templates](https://github.com/enescingoz/awesome-n8n-templates)
 
 ## Alternatives
 
