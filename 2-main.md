@@ -4,9 +4,10 @@
 
 ---
 
+- [ChatGPT](https://chatgpt.com)
 - [Todoist](https://app.todoist.com/)
 - [WhatsApp Web](https://web.whatsapp.com/)
-- [Grammarly](https://app.grammarly.com/) weaning in-progress. Replacing it with [Language Tool](https://languagetool.org/editor/) after 2025-DEC.
+- [Grammarly](https://app.grammarly.com/) being replaced with [Language Tool](https://languagetool.org/editor/)
 
 ---
 
@@ -18,6 +19,7 @@
 
 - [Aider](https://aider.chat)
 - [Anthropic Claude Code](https://github.com/anthropics/claude-code)
+- [Cursor CLI](https://cursor.com/cli)
 - [Google Gemini CLI](https://github.com/google-gemini/gemini-cli)
 - [OpenAI Codex](https://github.com/openai/codex)
 - [Open Code](https://opencode.ai)
@@ -25,24 +27,18 @@
 
 ---
 
-- [ChatGPT](https://chatgpt.com)
-- [Claude](https://claude.ai/)
+- [HyprNote](https://hyprnote.com) transcribes and summarizes your meetings, without a single byte of data leaving your computer.
+- [Whispering](https://github.com/epicenter-so/epicenter/tree/main/apps/whispering) is a minimal transcription that works with local and cloud models.
 - [ElevenLabs](https://elevenlabs.io)
 - [v0](https://v0.dev)
 - [Replit](https://replit.com/~)
-- [Lovable](https://lovable.dev)
-- [Bolt](https://bolt.new/)
 - [Storm](https://storm.genie.stanford.edu) Knowledge curation system from Stanford.
-- [Aider](https://aider.chat) CLI Code Assistant
 - [Manus](https://manus.im/) General AI agent
 - [Sourcetable](https://sourcetable.com) is an AI Spreadsheet
-- [Colorify Rocks](https://colorify.rocks) - Create stunning color palettes instantly with AI.
 - [Colourise](https://colourise.com) - Colorize Photo Online Free with AI.
 - [Favicon Generator](https://realfavicongenerator.net) - Favicon generator.
 - [IT Tools](https://it-tools.tech) - IT Tools and Utilities
-- [JSON Crack](https://jsoncrack.com) - The best online JSON viewer to visualize, format and explore.
 - [TableConvert](https://tableconvert.com/html-to-markdown) - Convert HTML Table to Markdown Table Online.
-- [Archive](https://archive.today)
 
 ---
 
