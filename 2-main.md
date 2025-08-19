@@ -5,6 +5,7 @@
 ---
 
 - [ChatGPT](https://chatgpt.com)
+- [Google Gemini](https://gemini.google.com/)
 - [Todoist](https://app.todoist.com/)
 - [WhatsApp Web](https://web.whatsapp.com/)
 - [Grammarly](https://app.grammarly.com/) being replaced with [Language Tool](https://languagetool.org/editor/)
