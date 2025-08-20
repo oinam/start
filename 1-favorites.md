@@ -8,6 +8,7 @@
 
 ## Lighthouse
 
+- [Oinam CRM](https://crm.oinam.com)
 - [Attio](https://app.attio.com) is the AI-native CRM.
 - [Bridge](https://get.brdg.app/) streamline introductions.
 - [Connect the Dots](https://app.ctd.ai/) leverages relationship platform to build pipeline, deals, and drive referrals.
