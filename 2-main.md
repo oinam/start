@@ -45,7 +45,9 @@
 
 - [Flux Kontext Dev](https://flux-kontext-dev.com) edits Images with Text Instructions.
 - [Genspark](https://www.genspark.ai) is an “AI Agentic Engine” designed to let AI agents search, deep research and various tasks, delivering answers and comprehensive results.
+- [Leonardo](https://app.leonardo.ai/) Image and Video Generation
 - [Ideogram](https://ideogram.ai/) Generate Pictures
+- [Qwen](https://qwen.ai/)
 
 ---
 
