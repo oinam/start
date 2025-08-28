@@ -51,9 +51,5 @@
 
 ---
 
-- [Graphite Editor](https://editor.graphite.rs)
-
----
-
 - [Cloudflare Radar](https://radar.cloudflare.com) provides real-time insights and trends about global Internet traffic, security threats, and technology adoption.
 - [Cloudflare Speed](https://speed.cloudflare.com) allows users to accurately measure the performance of their Internet connection using Cloudflare’s global edge network.

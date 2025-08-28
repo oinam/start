@@ -21,4 +21,5 @@
 
 ## Watch ’EM
 
-- [Aligneer](https://app.alignerr.com) is a data labeler, RLHF platform.
+- [Aligneer](https://app.alignerr.com/signin?referral-code=af2c1f06-67ef-4a5c-b573-32010b49b7cc) is a data labeler, RLHF platform.
+- [Graphite Editor](https://editor.graphite.rs) is a free, open source vector and raster graphics editor. Get creative with a fully nondestructive editing workflow that combines layer-based compositing with node-based generative design.
