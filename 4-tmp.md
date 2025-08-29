@@ -1,5 +1,6 @@
 ## ./tmp (Read, Test, & Process)
 
+- [Nano Banana](https://nanobanana.ai) Transform any image with simple text prompts. Nano-banana's advanced model delivers consistent character editing and scene preservation.
 - [Montra](https://montra.com) - AI Video Generator/Editor.
 - [Epicenter](https://epicenter.so) is an ecosystem of [open-source](https://github.com/epicenter-so/epicenter), local-first apps.
 - [StageWise](https://stagewise.io) is a frontend coding agent that runs locally, lives inside the browser and let’s you build app frontends by selecting elements and prompting changes.
