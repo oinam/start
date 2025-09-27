@@ -38,3 +38,4 @@
 - [Stacktape](https://stacktape.com) is a PaaS that deploys to your own AWS account.
 - [Sesame](https://www.sesame.com) is an interdisciplinary product and research team focused on making voice companions useful for daily life.
 - [Listen](https://listenlabs.ai) finds the right participants, conducts interviews, analyzes responses, and delivers actionable insights—with results in hours, not weeks.
+- [Moondream](https://moondream.ai) is an open-source visual language model that understands images using simple text prompts. It's fast and wildly capable.
