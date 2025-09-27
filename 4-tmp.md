@@ -1,5 +1,6 @@
 ## ./tmp (Read, Test, & Process)
 
+- [z.ai](https://z.ai)
 - [Slashy](https://www.slashy.ai) connects to all your tools to complete entire tasks.
 - [Nano Banana](https://nanobanana.ai) Transform any image with simple text prompts. Nano-banana's advanced model delivers consistent character editing and scene preservation.
 - [Montra](https://montra.com) - AI Video Generator/Editor.
