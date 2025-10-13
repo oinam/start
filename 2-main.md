@@ -40,6 +40,7 @@
 - [Favicon Generator](https://realfavicongenerator.net) - Favicon generator.
 - [IT Tools](https://it-tools.tech) - IT Tools and Utilities
 - [TableConvert](https://tableconvert.com/html-to-markdown) - Convert HTML Table to Markdown Table Online.
+- [Inclusive Colors](https://www.inclusivecolors.com/) is a tool for creating custom color palettes for web designs that pass WCAG contrast requirements.
 
 ---
 
