@@ -41,6 +41,8 @@
 - [IT Tools](https://it-tools.tech) - IT Tools and Utilities
 - [TableConvert](https://tableconvert.com/html-to-markdown) - Convert HTML Table to Markdown Table Online.
 - [Inclusive Colors](https://www.inclusivecolors.com/) is a tool for creating custom color palettes for web designs that pass WCAG contrast requirements.
+- [OnlyJPG](https://onlyjpg.com) is the private way to convert any image—PNG, AVIF, HEIC, PDF, SVG, TIFF, TGA & more—into a smaller, universally compatible JPG.
+- [Vert](https://vert.sh/) is an [open-source](https://github.com/VERT-sh/VERT) file conversion utility that uses WebAssembly to convert files on your device instead of a cloud. It is built in Svelte and TypeScript.
 
 ---
 
