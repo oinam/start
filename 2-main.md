@@ -36,6 +36,7 @@
 - [Storm](https://storm.genie.stanford.edu) Knowledge curation system from Stanford.
 - [Manus](https://manus.im/) General AI agent
 - [Sourcetable](https://sourcetable.com) is an AI Spreadsheet
+- [Colorfreak](https://colorphreak.com/) Instantly create perceptually uniform and accessible color palettes and themes.
 - [Colourise](https://colourise.com) - Colorize Photo Online Free with AI.
 - [Favicon Generator](https://realfavicongenerator.net) - Favicon generator.
 - [IT Tools](https://it-tools.tech) - IT Tools and Utilities
