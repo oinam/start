@@ -1,17 +1,14 @@
 ## Favorites
 
 - [Hacker News](https://news.ycombinator.com) gratifies one’s intellectual curiosity.
-- [Hacker News Source](https://github.com/brajeshwar/hackernews-source)
-- [Arts & Letters Daily](https://www.aldaily.com) since 1998-SEP.
+- [Hacker News Source](https://github.com/brajeshwar/hackernews-source) my Hacker News submissions.
 - [Oinam’s Read](https://read.oinam.com) Archives by [Shiori](https://github.com/go-shiori/shiori).
 - [On Deck Community](https://community.joinodf.com)
 
 ## Lighthouse
 
-- [Attio](https://app.attio.com) is the AI-native CRM.
-- [Bridge](https://get.brdg.app/) streamline introductions.
+- [Attio](https://app.attio.com) is the CRM.
 - [Connect the Dots](https://app.ctd.ai/) leverages relationship platform to build pipeline, deals, and drive referrals.
-- [Distill](https://distill.fyi) detailed, accurate, and easy-to-read profiles on the people and companies you'd like to learn about.
 - [Happentence](https://happenstance.ai/) Find people in your networks.
 
 ## Banks
@@ -21,5 +18,6 @@
 
 ## Watch ’EM
 
-- [Aligneer](https://app.alignerr.com/signin?referral-code=af2c1f06-67ef-4a5c-b573-32010b49b7cc) is a data labeler, RLHF platform.
+- [Bridge](https://get.brdg.app/) streamline introductions.
 - [Graphite Editor](https://editor.graphite.rs) is a free, open source vector and raster graphics editor. Get creative with a fully nondestructive editing workflow that combines layer-based compositing with node-based generative design.
+- [Superhuman](https://superhuman.com) Mail + Grammarly + Coda.
