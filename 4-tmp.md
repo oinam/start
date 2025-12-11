@@ -1,5 +1,6 @@
 ## ./tmp (Read, Test, & Process)
 
+- [Novu](https://novu.co) notification platform.
 - [Montra](https://montra.com) - AI Video Generator/Editor.
 - [Epicenter](https://epicenter.so) is an ecosystem of [open-source](https://github.com/epicenter-so/epicenter), local-first apps.
 - [Cline](https://cline.bot) is an [open-source](https://github.com/cline/cline) collaborative AI partner that's extensible, and designed to amplify developer impact.
