@@ -14,6 +14,7 @@
 - [Claude Skills](https://github.com/ComposioHQ/awesome-claude-skills)
 - [Generative AI](https://github.com/steven2358/awesome-generative-ai)
 - [n8n Templates](https://github.com/enescingoz/awesome-n8n-templates)
+- [TUIs](https://github.com/rothgar/awesome-tuis)
 
 ## Alternatives
 
