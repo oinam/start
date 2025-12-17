@@ -21,4 +21,4 @@
 - [Bridge](https://get.brdg.app/) streamline introductions.
 - [Graphite Editor](https://editor.graphite.rs) is a free, open source vector and raster graphics editor. Get creative with a fully nondestructive editing workflow that combines layer-based compositing with node-based generative design.
 - [Superhuman](https://superhuman.com) Mail + Grammarly + Coda.
-- [Mephisto](https://mephistomail.site) is a RAM-only, ad-free disposable email service.
+- [Mephisto](https://mephistomail.site) is a RAM-only, ad-free disposable email service. Look like a nicely done UI Wrapper on top of [Guerrilla Mail](https://www.guerrillamail.com).
