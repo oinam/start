@@ -1,6 +1,7 @@
 ## References
 
 - [Character Entities for HTML, CSS and Javascript](https://oinam.github.io/entities/)
+- [Unicode Symbols](https://fontgenerator.design/symbols) sets for math, currency, arrows, geometry, decorative marks, tech/UI, and punctuation.
 - [Buy Once Software](https://buyoncesoftware.com) - Discover software you can buy once and own forever--no recurring charges, just tools that work for you, for life.
 - [LLM Leaderboard](https://llm-stats.com) - Analyze and compare AI models across benchmarks, pricing, and capabilities.
 - [Price Per Token](https://pricepertoken.com) - Up-to-date pricing information for major LLM APIs including OpenAI, Anthropic, Google, and more.
