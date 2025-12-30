@@ -12,7 +12,6 @@
 - [HyprNote](https://hyprnote.com) transcribes and summarizes meetings.
 - [Whispering](https://github.com/epicenter-so/epicenter/tree/main/apps/whispering) transcription with local and cloud models.
 - [Storm](https://storm.genie.stanford.edu) Knowledge curation system from Stanford.
-- [Manus](https://manus.im/) General AI agent
 - [Sourcetable](https://sourcetable.com) is an AI Spreadsheet
 
 ## Design & Develop
