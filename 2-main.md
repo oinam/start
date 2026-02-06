@@ -3,6 +3,7 @@
 - [Void](https://void.oinam.com) is Nothing. Just Be Quiet.
 - [BentoPDF](https://bentopdf.com/) is a multi-tool and utility to manipulate PDFs.
 - [QArt Coder](https://research.swtch.com/qr/draw/) create QR Codes over a background image.
+- [Pandoc App](https://pandoc.org/app/)
 
 ## Operate
 
