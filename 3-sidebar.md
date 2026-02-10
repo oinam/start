@@ -8,6 +8,7 @@
 - [Startup Prompt Library](https://fi.co/prompts) from Founder Institute. Copy, customize and accelerate your startup journey with expert-built prompts designed for real founders.
 - [Prompts Chat](https://prompts.chat) - A curated collection of effective prompts for ChatGPT and other AI assistants.
 - [The Book of Secret Knowledge](https://github.com/trimstray/the-book-of-secret-knowledge) - A collection of inspiring lists, manuals, cheatsheets, blogs, hacks, one-liners, cli/web tools, and more.
+- [Making Software](https://www.makingsoftware.com) A reference manual for people who design and build software.
 
 ## Awesome
 
