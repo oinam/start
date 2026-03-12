@@ -1,9 +1,7 @@
 ## Favorites
 
 - [Hacker News](https://news.ycombinator.com) gratifies one’s intellectual curiosity.
-- [Hacker News Source](https://github.com/brajeshwar/hackernews-source) my Hacker News submissions.
 - [Oinam’s Read](https://read.oinam.com) Archives by [Shiori](https://github.com/go-shiori/shiori).
-- [On Deck Community](https://community.joinodf.com)
 
 ## Lighthouse
 
