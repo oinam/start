@@ -13,7 +13,7 @@
 ## Awesome
 
 - [Awesome](https://github.com/sindresorhus/awesome) lists about all kinds of interesting topics.
-- [Claude Skills](https://github.com/ComposioHQ/awesome-claude-skills)
+- [Claude Code](https://github.com/rosaboyle/awesome-cc-oss)
 - [Generative AI](https://github.com/steven2358/awesome-generative-ai)
 - [n8n Templates](https://github.com/enescingoz/awesome-n8n-templates)
 - [TUIs](https://github.com/rothgar/awesome-tuis)
