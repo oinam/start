@@ -32,3 +32,4 @@
 - Internet Speed › [Cloudflare Speed](https://speed.cloudflare.com), [Fast](https://fast.com), [Speedtest](https://www.speedtest.net)
 - [Cloudflare Radar](https://radar.cloudflare.com) insights and trends about global Internet traffic, security threats, and technology adoption.
 - [Web-Check](https://web-check.as93.net/) All-in-one OSINT tool.
+- [Mr.DNS](https://mrdns.com) DNS & Network Tools
