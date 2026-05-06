@@ -2,6 +2,7 @@
 
 - [Void](https://void.oinam.com) is Nothing. Just Be Quiet.
 - [BentoPDF](https://bentopdf.com/) is a multi-tool and utility to manipulate PDFs.
+- [BulkPicTools](https://bulkpictools.com) is a free, browser-based bulk image processor — compress, convert (HEIC, WebP, AVIF), resize, and watermark 1,000+ images at once. Files never leave your device.
 - [QArt Coder](https://research.swtch.com/qr/draw/) create QR Codes over a background image.
 - [Pandoc App](https://pandoc.org/app/) online file conversion from Pandoc.
 
